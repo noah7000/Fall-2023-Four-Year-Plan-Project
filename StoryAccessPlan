@@ -1,0 +1,7 @@
+As a: professor
+I want to: access to the 4 year plan of my students
+So that: i can use it as a guidance counselor
+
+Acceptance criteria:
+- Can I edit the database?
+- Can I search a specific student's plan?
