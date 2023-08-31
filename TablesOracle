@@ -1,6 +1,21 @@
 1. Student
--
+- ID
+- Email
+- Passed courses
+- Seniority
 
 2. Courses
--
+- Code
+- ID
+- Semester
+- Time offered 
+
+3. advisor
+- ID
+- Email
+
+4. Semester
+- FA
+- SP
+- Year
 
