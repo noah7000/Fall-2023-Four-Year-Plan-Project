@@ -1,0 +1,11 @@
+As a: Professor
+
+I want to: edit the 4 year plan
+
+So that: I can move and change order and courses in the plan
+
+Acceptance criteria:
+- Can I edit only under the student request?
+- Do I need approval from registrar?
+- Do I need a different log in?
+-
