@@ -1,0 +1,9 @@
+As a: Student
+I want to: input my 4-year plan
+So that: I can choose all the courses I want to take in the future
+
+Acceptance criteria
+- Can I change my plan if I change my mind on a course?
+- Does the system show all the courses I have already taken?
+- Does system ask me for my major and minor?
+- Does the system show me all of the courses required for my major/minor?
