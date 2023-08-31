@@ -5,3 +5,5 @@ So that: i can use it as a guidance counselor
 Acceptance criteria:
 - Can I edit the database?
 - Can I search a specific student's plan?
+- If the system alert a change do I get an explanation?
+- Can I get the 4 year plan from the database?
