@@ -1,10 +1,8 @@
 As a: Student
 I want: To log into the system
-So that: I can access my data for my 4 year plan
+So that: I can input/change my data for my 4 year plan
 Acceptance Criteria
-• Is there a username field?
-• Is there a password field?
+• Does the system except a Username and password
 • If I use the correct credentials, will I be given access to my 4 year plan?
-• Is there a forgot my password button?
 • Does the application stop accepting log-in attempts after a certain number of invalid login
 attempts?
