@@ -1,0 +1,12 @@
+As a: Software Developer
+I want: To obtain student data from the registrar
+So that: Students do not have to manually input their academic history
+Acceptance Criteria
+● Is the data secure?
+● Is the affected student informed of the data access request?
+● Is there a way for the student to allow/deny data access?
+● Is the method of transferring data from the registrar secure?
+● Is the data password protected?
+● Is the registrar office properly informed of the reason data is being requested?
+● Is the registrar office confident in the security of any obtained data?
+● Does the University permit the sharing of student data to another department?
