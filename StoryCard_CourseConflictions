@@ -1,7 +1,6 @@
-As a: Professor
-I want: To be notified of any course conflictions
-So that: I can make proper edits to a student’s generated four year plan
+As a: Student
+I want: To be notified of any scheduling errors while entering my four year plan
+So that: the four year plan i create is theoretically possible
 Acceptance Criteria
-● Are the class codes and names of the conflicting classes included in the notification?
-● Are the specific time periods of the conflicting classes included in the notification?
-● Is the user notified of the conflict/s in the UI of the software?
+●  Does the system alert the user the scheduling errors?
+●  Does the system not allow the student to submit unless the error is resolved?
