@@ -1,13 +1,8 @@
 As a: Student
-
-I want to: request a change in the 4-year plan.
-
+I want to: edit the 4-year plan.
 So that: I can edit the order and plan of the courses during the 4 years.
 
 Acceptance criteria
-
-- Do I need a platform to submit the request?
 - Do I need approval from my advisor?
-- If I get rejected, can I request again with an explanation of why I want to change it?
-- If I get rejected, can I request to a different person?
-- If I drop a course during a semester, can I add it into the plan?
+- Is it easy to edit and move courses?
+- If the system alert a change do I get an explanation?
