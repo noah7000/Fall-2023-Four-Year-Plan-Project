@@ -1,21 +1,48 @@
 1. Student
-- ID
+- ID (primary key)
 - Email
 - Passed courses
 - Seniority
+- Advisor ID (Foreign Key referencing Advisor table, indicating the student's academic advisor)
 
 2. Courses
-- Code
-- ID
+- Code (primary key)
+- ID (abbreviation) 
 - Semester
 - Time offered 
+- Course Name
+- Credits
 
 3. advisor
-- ID
+- ID primary key)
 - Email
 
 4. Semester
-- FA
-- SP
-- Year
+- FA (Primary Key)
+- SP (Primary Key)
+- Year (Primary Key)
 
+5. Degree Program
+- Program Code
+- Name
+- Total Credits Required
+- course code
+
+6. Course Schedule
+- Schedule ID
+- Course Code (foreign key referencing Courses table)
+- Instructor ID (foreign key referencing Instructor table)
+- Room Number
+- Day of the Week
+- Time Slot
+
+7. Advises
+- Advisor ID
+- Student ID
+
+8. Transcript
+- Transcript ID
+- Student ID (foreign key referencing Student table)
+- Course Code (foreign key referencing Courses table)
+- Semester (foreign key referencing Semester table)
+- Grade/GPA
