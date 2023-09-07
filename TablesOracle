@@ -2,7 +2,7 @@
 - ID (primary key)
 - Email
 - Passed courses
-- Seniority
+- Seniority (amount credits)
 - Advisor ID (Foreign Key referencing Advisor table, indicating the student's academic advisor)
 
 2. Courses
