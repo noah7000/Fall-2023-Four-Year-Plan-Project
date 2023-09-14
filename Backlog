@@ -1,0 +1,25 @@
+Project Backlog (divided into main sections of tasks)
+
+1. Database Creation
+  Make Tables
+  Create relations between tables
+  import the nessesary data into the correct tables
+
+2. Web Application 
+  Decide on the user interface guidlines
+  Create a php server using the GCP
+  Create a login screen
+  Create the full user interface
+  Create the method for the user's entry of the thier Four year plan in php/hmtl
+  Transfer the user entry to a CSV before going to a database
+  Connect the php server to the oracle database
+  Allow the software to read and write the oracle database
+  Create a system to inform the professor of which class times present risk of course conflict
+  Allow students and facaulty to log in with Bethel credentials
+  
+3. Tasks involving external sources
+  Request and recieve course data from the registrar
+  Request and recieve student data from IT
+  Work with Bariess and IT to start the oracle database on an internal server.
+  Apply FERPA Guidlines to the software
+  
