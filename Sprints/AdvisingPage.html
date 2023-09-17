@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<style>
+    table, th, td {
+        border: 2px solid black;
+        border-collapse: collapse;
+        
+    }
+    table.center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Zach">
+    <title>Document</title>
+</head>
+    <h1><center>Advising page</center></h1>
+<body>
+    <h3><center>Courses taken</center></h3>
+    <table class="center" width=100%>
+        <tr>
+            <th>Course Id</th>
+            <th>Course Name</th>
+            <th>Credits</th>
+        </tr>
+        <tr>
+            <td>CSC150</td>
+            <td>Seminar</td>
+            <td>0.5</td>
+        </tr>
+    </table>
+    <column width=50% padding=5px>
+        <table style="float: left;" width = 50%>
+            <tr>
+                <th>Semester</th>
+                <th>Course id</th>
+                <th>Credits</th>
+            </tr>
+            <tr>
+                <td>F2023</td>
+                <td>CSC350</td>
+                <td>3</td>
+            </tr>
+        </table>
+        <table style="float: right;" width = 50%>
+            <tr>
+                <th>Semester</th>
+                <th>Course id</th>
+                <th>Credits</th>
+            </tr>
+            <tr>
+                <td>S2024</td>
+                <td>CSC250</td>
+                <td>3</td>
+            </tr>
+            <tr></tr>
+        </table>
+    </column>
+    
+    <center><button onclick=AddYear()>Add Year</button></center>
+</body>
+</html>
