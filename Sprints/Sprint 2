@@ -1,9 +1,13 @@
 Sprint 2:
 
-Objective 1: Successfully import and export data to/from a CSV into an HTML page using php.
+Objective 1: Successfully import data from a CSV into an HTML page using php.
 Objective 2: Create the database server 
 
 Sprint backlog:
-  Create test data in a CSV
   Create a basic HTML website for testing
-  
+  Write code to import from CSV file to PHP
+  Meet Bareiss to create database (make ddls)
+  Manual insertion into the database
+  Create test data for the database
+
+
