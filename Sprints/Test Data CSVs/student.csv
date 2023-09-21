@@ -1,4 +1,4 @@
-Id, Email, Anticipated year of graduation, Name
+ID,EMAIL,ANTICIPATED_GRADUATE_DATE,NAME
 1, student1@example.com, 2024, John Smith
 2, student2@example.com, 2023, Jane Doe
 3, student3@example.com, 2025, Mark Johnson
