@@ -1,6 +1,6 @@
-Major code, Course code, Course name, Offered code, Credits
-CSCI, 101, Introduction to Computer Science, Fall, 3
-MATH, 201, Calculus I, Spring, 4
-PHYS, 301, Physics for Scientists and Engineers, Fall, 4
-CHEM, 202, Organic Chemistry, Spring, 5
-BIOL, 101, Introduction to Biology, Fall, 3
+MAJOR_CODE,COURSE_CODE,COURSE_NAME,OFFERED_CODE,CREDITS
+CSCI,101,Introduction to Computer Science,Fall,3
+MATH,201,Calculus I,Spring,4
+PHYS,301,Physics for Scientists and Engineers,Fall,4
+CHEM,202,Organic Chemistry,Spring,5
+BIOL,101,Introduction to Biology,Fall,3
