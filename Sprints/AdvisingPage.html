@@ -1,66 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Styling for the table -->
+    <style>
+        table, th, td {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        table.center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .column{
 
-<style>
-    table, th, td {
-        border: 2px solid black;
-        border-collapse: collapse;
-        
-    }
-    table.center {
-        margin-left: auto;
-        margin-right: auto;
-    }
-</style>    
+            width : 40%; /*width of a column*/
+            float : left; /* makes the columns fill to the left*/
+            padding : 5%; /*spacing between columns*/
+        }
+    </style>    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Zach">
     <title>Document</title>
 </head>
-    <h1><center>Advising page</center></h1>
 <body>
+    <!-- Page Title -->
+    <h1><center>Advising page</center></h1>
+    
+    <!-- Section for displaying courses taken -->
     <h3><center>Courses taken</center></h3>
+    
+    <!-- Table for displaying course information, centered on the page -->
     <table class="center" width=100%>
+        <!-- Table header row -->
         <tr>
             <th>Course Id</th>
             <th>Course Name</th>
             <th>Credits</th>
         </tr>
+        <!-- Sample course data row -->
         <tr>
             <td>CSC150</td>
             <td>Seminar</td>
             <td>0.5</td>
         </tr>
     </table>
-    <column width=50% padding=5px>
-        <table style="float: left;" width = 50%>
-            <tr>
-                <th>Semester</th>
-                <th>Course id</th>
-                <th>Credits</th>
-            </tr>
-            <tr>
-                <td>F2023</td>
-                <td>CSC350</td>
-                <td>3</td>
-            </tr>
+    <div class="column">
+        <!-- Section for organizing course data into columns -->
+        <column width=50% padding=5px>
+            <!-- Left column table for displaying course data -->
+            <table style="float: left;" width=50%>
+                <!-- Table header row for left column -->
+                <tr>
+                    <th>Semester</th>
+                    <th>Course id</th>
+                    <th>Credits</th>
+                </tr>
+                <!-- Sample course data row for left column -->
+                <tr>
+                    <td>F2023</td>
+                    <td>CSC350</td>
+                    <td>3</td>
+                </tr>
+            </table>
+        </div>        
+        <div class="column">
+            <!-- Right column table for displaying course data -->
+            <table style="float: right;" width=50%>
+                <!-- Table header row for right column -->
+                <tr>
+                    <th>Semester</th>
+                    <th>Course id</th>
+                    <th>Credits</th>
+                </tr>
+                <!-- Sample course data row for right column -->
+                <tr>
+                    <td>S2024</td>
+                    <td>CSC250</td>
+                    <td>3</td>
+                </tr>
+                <!--Additional row (empty) for right column -->
+                <tr>
+                    <td>S2024</td>
+                    <td>CSC222</td>
+                    <td>3</td>
+                </tr>
+            </table>
+        </column>
+    </div>
+
+
+    <div class="column">
+        <table>
+
         </table>
-        <table style="float: right;" width = 50%>
-            <tr>
-                <th>Semester</th>
-                <th>Course id</th>
-                <th>Credits</th>
-            </tr>
-            <tr>
-                <td>S2024</td>
-                <td>CSC250</td>
-                <td>3</td>
-            </tr>
-            <tr></tr>
-        </table>
-    </column>
-    
+    </div>
+
+
+    <div class = "column">
+        <!--<label for="Password">Password:</label>-->
+        <input type="text" id="searchBar" placeholder="Search">
+    </div>
+    <!-- Button to trigger JavaScript function "AddYear()" when clicked -->
     <center><button onclick=AddYear()>Add Year</button></center>
 </body>
 </html>
