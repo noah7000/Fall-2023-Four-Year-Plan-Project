@@ -1,1 +1,15 @@
+Sprint 3:
 
+Objective 1: Create plans and documentation for Web development code.
+Objective 2: Set up a test enviorment oracle server for programmers. 
+Objective 3: Create working website prototype.
+
+Sprint backlog:
+-  Make class diagram website logic.
+-  Make a sequence diagram.
+-  Start a Software Development Report
+
+-  Coding the logic without database connection
+-  Create the search function for finding classes
+-  Create hide/show button for the student's course history
+-  Output a student's four year plan as a csv
