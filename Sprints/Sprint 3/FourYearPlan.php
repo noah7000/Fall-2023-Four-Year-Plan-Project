@@ -1,11 +1,12 @@
 **********************************************
   * @author      Noah Jackson
-  * @course      CSC 321: Programming 3
+  * @course      Software Engineering
   * @assignment  Four Year Plan Project
   * @related     index.php, Year.php
   **********************************************
 <?php
-    
+    require "Year.php";
+
     //Class that creates a 4 year plan object that will store a student plan
     Class FourYearPlan { 
         private $years;
@@ -79,7 +80,7 @@
         public function toString() {
             $planString = "";
             for($i=0; $i<=count($this->years); $i++) {
-                $planString .= $this->years[$i].toString() + ", ";
+                $planString .= $this->years[$i]->toString() + ", ";
             }
             return $planString;
         }

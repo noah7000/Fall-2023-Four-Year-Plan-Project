@@ -1,11 +1,12 @@
-
-  **********************************************
-  * @author      Noah Jackson
-  * @course      CSC 321: Programming 3
-  * @assignment  Four Year Plan Project
-  * @related     FourYearPlan.php, Semester.php
-  **********************************************
+**********************************************
+* @author      Noah Jackson
+* @course      Software Engineering
+* @assignment  Four Year Plan Project
+* @related     FourYearPlan.php, Semester.php
+**********************************************
 <?php
+    require "Semester.php";
+
     Class Year {
         private $semesters;
         private $year;
@@ -41,7 +42,7 @@
         public function toString() {
             $yearString = "";
             for($i=0; $i<=count($this->semesters); $i++) {
-                $yearString .= $this->semesters[$i].toString() + ", ";
+                $yearString .= $this->semesters[$i]->toString() + ", ";
             }
             return $yearString;
         } 
