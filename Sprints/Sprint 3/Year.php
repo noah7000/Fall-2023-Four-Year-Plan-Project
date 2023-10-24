@@ -3,33 +3,47 @@
   * @author      Noah Jackson
   * @course      CSC 321: Programming 3
   * @assignment  Four Year Plan Project
-  * @related     FourYearPlan.php, Sem.php
+  * @related     FourYearPlan.php, Semester.php
   **********************************************
 <?php
     Class Year {
-        public $semesters;
-        public $year;
+        private $semesters;
+        private $year;
 
-        function __construct($year, $initSem)
-        {
+        function __construct($year) {
             $this->year = $year;
-            $fall = new Sem(0); //0 = fall
-            $spring = new Sem(1); // 1 = spring
-            $semesters = array($fall,$spring);
+            $semesters = array();
         }
 
-        public function getSemesters() {
-            return $this->semesters;
+        //****************** Accesssors ***********************
+
+        public function getSemester($index) {
+            return $this->semesters[$index];
         }
-    
+
         public function getYear() {
             return $this->year;
         }
+
+        //****************** Mutaters ***********************
     
-        /*Adds a given "semester" to the array of semseters for a year
-          that more than two semesters (i.e. summer or winter terms)*/
-        public function addSemester($newSem) {
+        //Adds a given semester to the array of semseters for a year
+        public function addSemester($newSem) { 
             array_push($this->semesters, $newSem); 
         }
+        
+        public function setYear($year) {
+            $this->year = $year;
+        }
+
+        //****************** Helpers ***********************
+        
+        public function toString() {
+            $yearString = "";
+            for($i=0; $i<=count($this->semesters); $i++) {
+                $yearString .= $this->semesters[$i].toString() + ", ";
+            }
+            return $yearString;
+        } 
     }
 ?>
