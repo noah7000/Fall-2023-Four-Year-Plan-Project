@@ -23,19 +23,19 @@
         }
         //Accessors
         public function getName(){
-            return $this->$name;
+            return $this->name;
         }
         public function getDepartment(){
-            return $this->$department;
+            return $this->department;
         }
         public function getCode(){
-            return $this->$code;
+            return $this->code;
         }
         public function getInstructor(){
-            return $this->$instructor;
+            return $this->instructor;
         }
         public function getCredits(){
-            return $this->$credits;
+            return $this->credits;
         }
         //Mutators
         public function setCredits($credits){
@@ -49,8 +49,8 @@
             $courseString = "";
             $courseString .= $this->department + $this->code;
             //each field besides department and code are separated by ": "
-            $courseString .= ": " + $this->$name;
-            $courseString .= ": " + $this->$credits;
+            $courseString .= ": " + $this->name;
+            $courseString .= ": " + $this->credits;
             return $courseString;
         }
     }

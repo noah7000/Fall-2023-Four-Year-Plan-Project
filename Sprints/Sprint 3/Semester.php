@@ -53,7 +53,7 @@
             //Need to implement a toString() method in course
             while(i<count(courses)){
                 $semString.=$this->$courses[i].toString();
-                i++;
+                $i++;
             }
             return $semString;
 
