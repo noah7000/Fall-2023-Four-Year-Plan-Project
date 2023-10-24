@@ -15,11 +15,11 @@
         private $instructor;
         private $credits;
         public function __construct($name,$department,$code,$instructor,$credits){
-            $this->$name = $name;
-            $this->$department = $department;
-            $this->$code = $code;
-            $this->$instructor = $instructor;
-            $this->$credits=$credits;
+            $this->name = $name;
+            $this->department = $department;
+            $this->code = $code;
+            $this->instructor = $instructor;
+            $this->credits=$credits;
         }
         //Accessors
         public function getName(){
@@ -39,10 +39,10 @@
         }
         //Mutators
         public function setCredits($credits){
-            $this->$credits = $credits;
+            $this->credits = $credits;
         }
         public function changeInstructor($instructor){
-            $this->$instructor = $instructor;
+            $this->instructor = $instructor;
         }
         //Additional Methods
         public function toString(){
