@@ -1,9 +1,9 @@
-**********************************************
+<!--**********************************************
 * @author      Noah Jackson
 * @course      Software Engineering
 * @assignment  Four Year Plan Project
 * @related     FourYearPlan.php, Semester.php
-**********************************************
+**********************************************-->
 <?php
     require "Semester.php";
 
@@ -13,7 +13,7 @@
 
         function __construct($year) {
             $this->year = $year;
-            $semesters = array();
+            $this->semesters = [];
         }
 
         //****************** Accesssors ***********************
@@ -30,7 +30,11 @@
     
         //Adds a given semester to the array of semseters for a year
         public function addSemester($newSem) { 
-            array_push($this->semesters, $newSem); 
+            try {
+                array_push($this->semesters, $newSem);
+            } catch (TypeError $e) {
+                $this->semesters[0] = $newSem;
+            } 
         }
         
         public function setYear($year) {
@@ -41,8 +45,8 @@
         
         public function toString() {
             $yearString = "";
-            for($i=0; $i<=count($this->semesters); $i++) {
-                $yearString .= $this->semesters[$i]->toString() + ", ";
+            for($i=0; $i<count($this->semesters); $i++) {
+                $yearString .= $this->semesters[$i]->toString();
             }
             return $yearString;
         } 

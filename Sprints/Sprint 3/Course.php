@@ -47,10 +47,10 @@
         //Additional Methods
         public function toString(){
             $courseString = "";
-            $courseString .= $this->department + $this->code;
+            $courseString .= $this->department . " " . $this->code;
             //each field besides department and code are separated by ": "
-            $courseString .= ": " + $this->name;
-            $courseString .= ": " + $this->credits;
+            $courseString .= ": " . $this->name;
+            $courseString .= ": " . $this->credits . "<br>";
             return $courseString;
         }
     }

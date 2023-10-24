@@ -39,7 +39,11 @@
         }
         //Mutators
         public function addCourse($newCourse){
-            array_push($this->courses, $newCourse);
+            try {
+                array_push($this->courses, $newCourse);
+            } catch (TypeError $e) {
+                $this->courses[0] = $newCourse;
+            }
         }
         public function setValidity($validity){
             $this->isValid = $validity;
