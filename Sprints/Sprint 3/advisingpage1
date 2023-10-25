@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table, th, td {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        .main {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .table-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .table {
+            border: 1px solid #000;
+            border-collapse: collapse;
+            margin:  10px auto;
+        }
+        .table td, .table th {
+            border: 2px solid #000;
+            padding: 8px;
+        }
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Zach">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Page Title -->
+    <h1><center>Advising page</center></h1>
+    <!-- Section for displaying courses taken -->
+    
+    <!-- Table for displaying course information, centered on the page -->
+    <table class="main" width=90%>
+        <!-- Table header row -->
+        <tr>
+            <th colspan="4">Courses taken</th>
+        </tr>
+        <tr>
+            <th>Course Id</th>
+            <th>Course Name</th>
+            <th>Credits</th>
+        </tr>
+        <!-- Sample course data row -->
+        <tr>
+            <td>CSC150</td>
+            <td>Seminar</td>
+            <td>0.5</td>
+        </tr>
+    </table>
+    
+    <div class="table-container">
+        <table class="table" style="float: left;">
+            <tr>
+                <th colspan="4">Semester S2024</th>
+            </tr>
+            <tr>
+                <th>Depart</th>
+                <th>Code</th>
+                <th>Name</th>
+                <th>Credits</th>
+            </tr>
+            <!-- Sample course data row for left column -->
+            
+            <tr>
+                <td>
+                <form oninput="outputResult.value = course1.value">
+                    <label for="department"></label>
+                    <select id="department" name="department">
+                        <option value=""></option>
+                        <option value="CSC">CSC</option>
+                        <option value="MATH">MATH</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="BIBL">BIBL</option>
+                        <option value="ENGL">ENGL</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SOC">SOC</option>
+                        <option value="THEO">THEO</option>
+                        <option value="KINE">KINE</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="code"></label>
+                    <select id="code" name="code">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </td>
+                <label for="outputResult"></label>
+                    <output id="outputResult" name="outputResult" for="course1">
+                    </output>
+                <td>
+                    
+                </td>
+                </form>
+            </tr>
+            </table>
+
+        <table class="table" style="margin: 10 auto;">
+            <tr>
+                <th colspan="4">Semester S2024</th>
+            </tr>
+            <tr>
+                <th>Depart</th>
+                <th>Code</th>
+                <th>Name</th>
+                <th>Credits</th>
+            </tr>
+            <!-- Sample course data row for left column -->
+            
+            <tr>
+                <td>
+                <form oninput="outputResult.value = course1.value">
+                    <label for="department"></label>
+                    <select id="department" name="department">
+                        <option value=""></option>
+                        <option value="CSC">CSC</option>
+                        <option value="MATH">MATH</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="BIBL">BIBL</option>
+                        <option value="ENGL">ENGL</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SOC">SOC</option>
+                        <option value="THEO">THEO</option>
+                        <option value="KINE">KINE</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="code"></label>
+                    <select id="code" name="code">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </td>
+                <label for="outputResult"></label>
+                    <output id="outputResult" name="outputResult" for="course1">
+                    </output>
+                <td>
+                    
+                </td>
+                </form>
+            </tr>
+        </table>
+
+        <table class="table" style="float: right;">
+            <tr>
+                <th colspan="4">Semester S2024</th>
+            </tr>
+            <tr>
+                <th>Depart</th>
+                <th>Code</th>
+                <th>Name</th>
+                <th>Credits</th>
+            </tr>
+            <!-- Sample course data row for left column -->
+            
+            <tr>
+                <td>
+                <form oninput="outputResult.value = course1.value">
+                    <label for="department"></label>
+                    <select id="department" name="department">
+                        <option value=""></option>
+                        <option value="CSC">CSC</option>
+                        <option value="MATH">MATH</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="BIBL">BIBL</option>
+                        <option value="ENGL">ENGL</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SOC">SOC</option>
+                        <option value="THEO">THEO</option>
+                        <option value="KINE">KINE</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="code"></label>
+                    <select id="code" name="code">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </td>
+                <label for="outputResult"></label>
+                    <output id="outputResult" name="outputResult" for="course1">
+                    </output>
+                <td>
+                    
+                </td>
+                </form>
+            </tr>
+        </table>
+        <!-- Button to trigger JavaScript function "AddYear()" when clicked -->
+   <!-- <center><button onclick=AddYear()>Add Year</button></center>-->
+    </div>
+</body>
+</html>
