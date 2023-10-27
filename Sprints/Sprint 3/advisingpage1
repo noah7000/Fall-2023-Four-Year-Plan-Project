@@ -23,6 +23,8 @@
             border: 2px solid #000;
             padding: 8px;
         }
+        /* Define the size of the dropdown */
+        
         
     </style>
     <meta charset="UTF-8">
@@ -57,7 +59,7 @@
     <div class="table-container">
         <table class="table" style="float: left;">
             <tr>
-                <th colspan="4">Semester S2024</th>
+                <th colspan="4">Spring 2024</th>
             </tr>
             <tr>
                 <th>Depart</th>
@@ -82,6 +84,74 @@
                         <option value="SOC">SOC</option>
                         <option value="THEO">THEO</option>
                         <option value="KINE">KINE</option>
+                        <option value="KINE">COMM</option>
+                        <option value="KINE">BADM</option>
+                        <option value="KINE">WRIT</option>
+                        <option value="KINE">AART</option>
+                        <option value="KINE">KINE</option>
+                        <option value="ACCT">ACCT</option>
+                        <option value="ADC">ADC</option>
+                        <option value="APOL">APOL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="BSS">BSS</option>
+                        <option value="BIOL">BIOL</option>
+                        <option value="CAPP">CAPP</option>
+                        <option value="CHEM">CHEM</option>
+                        <option value="CHI">CHI</option>
+                        <option value="COL">COL</option>
+                        <option value="CRMJ">CRMJ</option>
+                        <option value="ECED">ECED</option>
+                        <option value="ECON">ECON</option>
+                        <option value="EDUC">EDUC</option>
+                        <option value="ELED">ELED</option>
+                        <option value="FA">FA</option>
+                        <option value="FNAN">FNAN</option>
+                        <option value="FREN">FREN</option>
+                        <option value="GER">GER</option>
+                        <option value="GRK">GRK</option>
+                        <option value="ECED">ECED</option>
+                        <option value="HCM">HCM</option>
+                        <option value="HEB">HEB</option>
+                        <option value="HIST">HIST</option>
+                        <option value="HRM">HRM</option>
+                        <option value="HS">HS</option>
+                        <option value="HUM">HUM</option>
+                        <option value="INT">INT</option>
+                        <option value="ITSC">ITSC</option>
+                        <option value="JRNL">JRNL</option>
+                        <option value="KINE">KINE</option>
+                        <option value="LANG">LANG</option>
+                        <option value="LIT">LIT</option>
+                        <option value="MATH">MATH</option>
+                        <option value="MF">MF</option>
+                        <option value="MH">MH</option>
+                        <option value="MIN">MIN</option>
+                        <option value="MINP">MINP</option>
+                        <option value="MSL">MSL</option>
+                        <option value="MUAP">MUAP</option>
+                        <option value="MUED">MUED</option>
+                        <option value="MUEN">MUEN</option>
+                        <option value="MULH">MULH</option>
+                        <option value="MUTH">MUTH</option>
+                        <option value="MUWA">MUWA</option>
+                        <option value="NPM">NPM</option>
+                        <option value="NS">NS</option>
+                        <option value="NUR">NUR</option>
+                        <option value="ORGM">ORGM</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="PHYS">PHYS</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SCED">SCED</option>
+                        <option value="SOC">SOC</option>
+                        <option value="SPAN">SPAN</option>
+                        <option value="SPED">SPED</option>
+                        <option value="SS">SS</option>
+                        <option value="THEO">THEO</option>
+                        <option value="THTR">THTR</option>
+                        <option value="WRIT">WRIT</option>
+                        <option value="YMN">YMN</option>
+'
                     </select>
                 </td>
                 <td>
@@ -95,19 +165,441 @@
                         <option value=""></option>
                     </select>
                 </td>
-                <label for="outputResult"></label>
-                    <output id="outputResult" name="outputResult" for="course1">
-                    </output>
+                
+                <td>
+                    
+                </td>
                 <td>
                     
                 </td>
                 </form>
             </tr>
+            <tr>
+                <td>
+                <form oninput="outputResult.value = course1.value">
+                    <label for="department"></label>
+                    <select id="department" name="department">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value="CSC">CSC</option>
+                        <option value="MATH">MATH</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="BIBL">BIBL</option>
+                        <option value="ENGL">ENGL</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SOC">SOC</option>
+                        <option value="THEO">THEO</option>
+                        <option value="KINE">KINE</option>
+                        <option value="KINE">COMM</option>
+                        <option value="KINE">BADM</option>
+                        <option value="KINE">WRIT</option>
+                        <option value="KINE">AART</option>
+                        <option value="KINE">KINE</option>
+                        <option value="ACCT">ACCT</option>
+                        <option value="ADC">ADC</option>
+                        <option value="APOL">APOL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="BSS">BSS</option>
+                        <option value="BIOL">BIOL</option>
+                        <option value="CAPP">CAPP</option>
+                        <option value="CHEM">CHEM</option>
+                        <option value="CHI">CHI</option>
+                        <option value="COL">COL</option>
+                        <option value="CRMJ">CRMJ</option>
+                        <option value="ECED">ECED</option>
+                        <option value="ECON">ECON</option>
+                        <option value="EDUC">EDUC</option>
+                        <option value="ELED">ELED</option>
+                        <option value="FA">FA</option>
+                        <option value="FNAN">FNAN</option>
+                        <option value="FREN">FREN</option>
+                        <option value="GER">GER</option>
+                        <option value="GRK">GRK</option>
+                        <option value="ECED">ECED</option>
+                        <option value="HCM">HCM</option>
+                        <option value="HEB">HEB</option>
+                        <option value="HIST">HIST</option>
+                        <option value="HRM">HRM</option>
+                        <option value="HS">HS</option>
+                        <option value="HUM">HUM</option>
+                        <option value="INT">INT</option>
+                        <option value="ITSC">ITSC</option>
+                        <option value="JRNL">JRNL</option>
+                        <option value="KINE">KINE</option>
+                        <option value="LANG">LANG</option>
+                        <option value="LIT">LIT</option>
+                        <option value="MATH">MATH</option>
+                        <option value="MF">MF</option>
+                        <option value="MH">MH</option>
+                        <option value="MIN">MIN</option>
+                        <option value="MINP">MINP</option>
+                        <option value="MSL">MSL</option>
+                        <option value="MUAP">MUAP</option>
+                        <option value="MUED">MUED</option>
+                        <option value="MUEN">MUEN</option>
+                        <option value="MULH">MULH</option>
+                        <option value="MUTH">MUTH</option>
+                        <option value="MUWA">MUWA</option>
+                        <option value="NPM">NPM</option>
+                        <option value="NS">NS</option>
+                        <option value="NUR">NUR</option>
+                        <option value="ORGM">ORGM</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="PHYS">PHYS</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SCED">SCED</option>
+                        <option value="SOC">SOC</option>
+                        <option value="SPAN">SPAN</option>
+                        <option value="SPED">SPED</option>
+                        <option value="SS">SS</option>
+                        <option value="THEO">THEO</option>
+                        <option value="THTR">THTR</option>
+                        <option value="WRIT">WRIT</option>
+                        <option value="YMN">YMN</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="code"></label>
+                    <select id="code" name="code">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </td>
+                
+                <td>
+                    
+                </td>
+                <td>
+                    
+                </td>
+                </form>
+            </tr>
+            <tr>
+                <td>
+                <form oninput="outputResult.value = course1.value">
+                    <label for="department"></label>
+                    <select id="department" name="department">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value="CSC">CSC</option>
+                        <option value="MATH">MATH</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="BIBL">BIBL</option>
+                        <option value="ENGL">ENGL</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SOC">SOC</option>
+                        <option value="THEO">THEO</option>
+                        <option value="KINE">KINE</option>
+                        <option value="KINE">COMM</option>
+                        <option value="KINE">BADM</option>
+                        <option value="KINE">WRIT</option>
+                        <option value="KINE">AART</option>
+                        <option value="KINE">KINE</option>
+                        <option value="ACCT">ACCT</option>
+                        <option value="ADC">ADC</option>
+                        <option value="APOL">APOL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="BSS">BSS</option>
+                        <option value="BIOL">BIOL</option>
+                        <option value="CAPP">CAPP</option>
+                        <option value="CHEM">CHEM</option>
+                        <option value="CHI">CHI</option>
+                        <option value="COL">COL</option>
+                        <option value="CRMJ">CRMJ</option>
+                        <option value="ECED">ECED</option>
+                        <option value="ECON">ECON</option>
+                        <option value="EDUC">EDUC</option>
+                        <option value="ELED">ELED</option>
+                        <option value="FA">FA</option>
+                        <option value="FNAN">FNAN</option>
+                        <option value="FREN">FREN</option>
+                        <option value="GER">GER</option>
+                        <option value="GRK">GRK</option>
+                        <option value="ECED">ECED</option>
+                        <option value="HCM">HCM</option>
+                        <option value="HEB">HEB</option>
+                        <option value="HIST">HIST</option>
+                        <option value="HRM">HRM</option>
+                        <option value="HS">HS</option>
+                        <option value="HUM">HUM</option>
+                        <option value="INT">INT</option>
+                        <option value="ITSC">ITSC</option>
+                        <option value="JRNL">JRNL</option>
+                        <option value="KINE">KINE</option>
+                        <option value="LANG">LANG</option>
+                        <option value="LIT">LIT</option>
+                        <option value="MATH">MATH</option>
+                        <option value="MF">MF</option>
+                        <option value="MH">MH</option>
+                        <option value="MIN">MIN</option>
+                        <option value="MINP">MINP</option>
+                        <option value="MSL">MSL</option>
+                        <option value="MUAP">MUAP</option>
+                        <option value="MUED">MUED</option>
+                        <option value="MUEN">MUEN</option>
+                        <option value="MULH">MULH</option>
+                        <option value="MUTH">MUTH</option>
+                        <option value="MUWA">MUWA</option>
+                        <option value="NPM">NPM</option>
+                        <option value="NS">NS</option>
+                        <option value="NUR">NUR</option>
+                        <option value="ORGM">ORGM</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="PHYS">PHYS</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SCED">SCED</option>
+                        <option value="SOC">SOC</option>
+                        <option value="SPAN">SPAN</option>
+                        <option value="SPED">SPED</option>
+                        <option value="SS">SS</option>
+                        <option value="THEO">THEO</option>
+                        <option value="THTR">THTR</option>
+                        <option value="WRIT">WRIT</option>
+                        <option value="YMN">YMN</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="code"></label>
+                    <select id="code" name="code">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </td>
+                
+                <td>
+                    
+                </td>
+                <td>
+                    
+                </td>
+                </form>
+            </tr>
+            <tr>
+                <td>
+                <form oninput="outputResult.value = course1.value">
+                    <label for="department"></label>
+                    <select id="department" name="department">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value="CSC">CSC</option>
+                        <option value="MATH">MATH</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="BIBL">BIBL</option>
+                        <option value="ENGL">ENGL</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SOC">SOC</option>
+                        <option value="THEO">THEO</option>
+                        <option value="KINE">KINE</option>
+                        <option value="KINE">COMM</option>
+                        <option value="KINE">BADM</option>
+                        <option value="KINE">WRIT</option>
+                        <option value="KINE">AART</option>
+                        <option value="KINE">KINE</option>
+                        <option value="ACCT">ACCT</option>
+                        <option value="ADC">ADC</option>
+                        <option value="APOL">APOL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="BSS">BSS</option>
+                        <option value="BIOL">BIOL</option>
+                        <option value="CAPP">CAPP</option>
+                        <option value="CHEM">CHEM</option>
+                        <option value="CHI">CHI</option>
+                        <option value="COL">COL</option>
+                        <option value="CRMJ">CRMJ</option>
+                        <option value="ECED">ECED</option>
+                        <option value="ECON">ECON</option>
+                        <option value="EDUC">EDUC</option>
+                        <option value="ELED">ELED</option>
+                        <option value="FA">FA</option>
+                        <option value="FNAN">FNAN</option>
+                        <option value="FREN">FREN</option>
+                        <option value="GER">GER</option>
+                        <option value="GRK">GRK</option>
+                        <option value="ECED">ECED</option>
+                        <option value="HCM">HCM</option>
+                        <option value="HEB">HEB</option>
+                        <option value="HIST">HIST</option>
+                        <option value="HRM">HRM</option>
+                        <option value="HS">HS</option>
+                        <option value="HUM">HUM</option>
+                        <option value="INT">INT</option>
+                        <option value="ITSC">ITSC</option>
+                        <option value="JRNL">JRNL</option>
+                        <option value="KINE">KINE</option>
+                        <option value="LANG">LANG</option>
+                        <option value="LIT">LIT</option>
+                        <option value="MATH">MATH</option>
+                        <option value="MF">MF</option>
+                        <option value="MH">MH</option>
+                        <option value="MIN">MIN</option>
+                        <option value="MINP">MINP</option>
+                        <option value="MSL">MSL</option>
+                        <option value="MUAP">MUAP</option>
+                        <option value="MUED">MUED</option>
+                        <option value="MUEN">MUEN</option>
+                        <option value="MULH">MULH</option>
+                        <option value="MUTH">MUTH</option>
+                        <option value="MUWA">MUWA</option>
+                        <option value="NPM">NPM</option>
+                        <option value="NS">NS</option>
+                        <option value="NUR">NUR</option>
+                        <option value="ORGM">ORGM</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="PHYS">PHYS</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SCED">SCED</option>
+                        <option value="SOC">SOC</option>
+                        <option value="SPAN">SPAN</option>
+                        <option value="SPED">SPED</option>
+                        <option value="SS">SS</option>
+                        <option value="THEO">THEO</option>
+                        <option value="THTR">THTR</option>
+                        <option value="WRIT">WRIT</option>
+                        <option value="YMN">YMN</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="code"></label>
+                    <select id="code" name="code">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </td>
+                
+                <td>
+                    
+                </td>
+                <td>
+                    
+                </td>
+                </form>
+            </tr>
+            <tr>
+                <td>
+                <form oninput="outputResult.value = course1.value">
+                    <label for="department"></label>
+                    <select id="department" name="department">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value="CSC">CSC</option>
+                        <option value="MATH">MATH</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="BIBL">BIBL</option>
+                        <option value="ENGL">ENGL</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SOC">SOC</option>
+                        <option value="THEO">THEO</option>
+                        <option value="KINE">KINE</option>
+                        <option value="KINE">COMM</option>
+                        <option value="KINE">BADM</option>
+                        <option value="KINE">WRIT</option>
+                        <option value="KINE">AART</option>
+                        <option value="KINE">KINE</option>
+                        <option value="ACCT">ACCT</option>
+                        <option value="ADC">ADC</option>
+                        <option value="APOL">APOL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="BSS">BSS</option>
+                        <option value="BIOL">BIOL</option>
+                        <option value="CAPP">CAPP</option>
+                        <option value="CHEM">CHEM</option>
+                        <option value="CHI">CHI</option>
+                        <option value="COL">COL</option>
+                        <option value="CRMJ">CRMJ</option>
+                        <option value="ECED">ECED</option>
+                        <option value="ECON">ECON</option>
+                        <option value="EDUC">EDUC</option>
+                        <option value="ELED">ELED</option>
+                        <option value="FA">FA</option>
+                        <option value="FNAN">FNAN</option>
+                        <option value="FREN">FREN</option>
+                        <option value="GER">GER</option>
+                        <option value="GRK">GRK</option>
+                        <option value="ECED">ECED</option>
+                        <option value="HCM">HCM</option>
+                        <option value="HEB">HEB</option>
+                        <option value="HIST">HIST</option>
+                        <option value="HRM">HRM</option>
+                        <option value="HS">HS</option>
+                        <option value="HUM">HUM</option>
+                        <option value="INT">INT</option>
+                        <option value="ITSC">ITSC</option>
+                        <option value="JRNL">JRNL</option>
+                        <option value="KINE">KINE</option>
+                        <option value="LANG">LANG</option>
+                        <option value="LIT">LIT</option>
+                        <option value="MATH">MATH</option>
+                        <option value="MF">MF</option>
+                        <option value="MH">MH</option>
+                        <option value="MIN">MIN</option>
+                        <option value="MINP">MINP</option>
+                        <option value="MSL">MSL</option>
+                        <option value="MUAP">MUAP</option>
+                        <option value="MUED">MUED</option>
+                        <option value="MUEN">MUEN</option>
+                        <option value="MULH">MULH</option>
+                        <option value="MUTH">MUTH</option>
+                        <option value="MUWA">MUWA</option>
+                        <option value="NPM">NPM</option>
+                        <option value="NS">NS</option>
+                        <option value="NUR">NUR</option>
+                        <option value="ORGM">ORGM</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="PHYS">PHYS</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SCED">SCED</option>
+                        <option value="SOC">SOC</option>
+                        <option value="SPAN">SPAN</option>
+                        <option value="SPED">SPED</option>
+                        <option value="SS">SS</option>
+                        <option value="THEO">THEO</option>
+                        <option value="THTR">THTR</option>
+                        <option value="WRIT">WRIT</option>
+                        <option value="YMN">YMN</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="code"></label>
+                    <select id="code" name="code">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </td>
+                
+                <td>
+                    
+                </td>
+                <td>
+                    
+                </td>
+                </form>
+            </tr>
+            
             </table>
 
         <table class="table" style="margin: 10 auto;">
             <tr>
-                <th colspan="4">Semester S2024</th>
+                <th colspan="4">Fall 2024</th>
             </tr>
             <tr>
                 <th>Depart</th>
@@ -123,6 +615,7 @@
                     <label for="department"></label>
                     <select id="department" name="department">
                         <option value=""></option>
+                        <option value=""></option>
                         <option value="CSC">CSC</option>
                         <option value="MATH">MATH</option>
                         <option value="PHIL">PHIL</option>
@@ -132,6 +625,73 @@
                         <option value="SOC">SOC</option>
                         <option value="THEO">THEO</option>
                         <option value="KINE">KINE</option>
+                        <option value="KINE">COMM</option>
+                        <option value="KINE">BADM</option>
+                        <option value="KINE">WRIT</option>
+                        <option value="KINE">AART</option>
+                        <option value="KINE">KINE</option>
+                        <option value="ACCT">ACCT</option>
+                        <option value="ADC">ADC</option>
+                        <option value="APOL">APOL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="BSS">BSS</option>
+                        <option value="BIOL">BIOL</option>
+                        <option value="CAPP">CAPP</option>
+                        <option value="CHEM">CHEM</option>
+                        <option value="CHI">CHI</option>
+                        <option value="COL">COL</option>
+                        <option value="CRMJ">CRMJ</option>
+                        <option value="ECED">ECED</option>
+                        <option value="ECON">ECON</option>
+                        <option value="EDUC">EDUC</option>
+                        <option value="ELED">ELED</option>
+                        <option value="FA">FA</option>
+                        <option value="FNAN">FNAN</option>
+                        <option value="FREN">FREN</option>
+                        <option value="GER">GER</option>
+                        <option value="GRK">GRK</option>
+                        <option value="ECED">ECED</option>
+                        <option value="HCM">HCM</option>
+                        <option value="HEB">HEB</option>
+                        <option value="HIST">HIST</option>
+                        <option value="HRM">HRM</option>
+                        <option value="HS">HS</option>
+                        <option value="HUM">HUM</option>
+                        <option value="INT">INT</option>
+                        <option value="ITSC">ITSC</option>
+                        <option value="JRNL">JRNL</option>
+                        <option value="KINE">KINE</option>
+                        <option value="LANG">LANG</option>
+                        <option value="LIT">LIT</option>
+                        <option value="MATH">MATH</option>
+                        <option value="MF">MF</option>
+                        <option value="MH">MH</option>
+                        <option value="MIN">MIN</option>
+                        <option value="MINP">MINP</option>
+                        <option value="MSL">MSL</option>
+                        <option value="MUAP">MUAP</option>
+                        <option value="MUED">MUED</option>
+                        <option value="MUEN">MUEN</option>
+                        <option value="MULH">MULH</option>
+                        <option value="MUTH">MUTH</option>
+                        <option value="MUWA">MUWA</option>
+                        <option value="NPM">NPM</option>
+                        <option value="NS">NS</option>
+                        <option value="NUR">NUR</option>
+                        <option value="ORGM">ORGM</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="PHYS">PHYS</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SCED">SCED</option>
+                        <option value="SOC">SOC</option>
+                        <option value="SPAN">SPAN</option>
+                        <option value="SPED">SPED</option>
+                        <option value="SS">SS</option>
+                        <option value="THEO">THEO</option>
+                        <option value="THTR">THTR</option>
+                        <option value="WRIT">WRIT</option>
+                        <option value="YMN">YMN</option>
                     </select>
                 </td>
                 <td>
@@ -145,19 +705,983 @@
                         <option value=""></option>
                     </select>
                 </td>
-                <label for="outputResult"></label>
-                    <output id="outputResult" name="outputResult" for="course1">
-                    </output>
+                
+                <td>
+                    
+                </td>
                 <td>
                     
                 </td>
                 </form>
             </tr>
+            <tr>
+                <td>
+                <form oninput="outputResult.value = course1.value">
+                    <label for="department"></label>
+                    <select id="department" name="department">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value="CSC">CSC</option>
+                        <option value="MATH">MATH</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="BIBL">BIBL</option>
+                        <option value="ENGL">ENGL</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SOC">SOC</option>
+                        <option value="THEO">THEO</option>
+                        <option value="KINE">KINE</option>
+                        <option value="KINE">COMM</option>
+                        <option value="KINE">BADM</option>
+                        <option value="KINE">WRIT</option>
+                        <option value="KINE">AART</option>
+                        <option value="KINE">KINE</option>
+                        <option value="ACCT">ACCT</option>
+                        <option value="ADC">ADC</option>
+                        <option value="APOL">APOL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="BSS">BSS</option>
+                        <option value="BIOL">BIOL</option>
+                        <option value="CAPP">CAPP</option>
+                        <option value="CHEM">CHEM</option>
+                        <option value="CHI">CHI</option>
+                        <option value="COL">COL</option>
+                        <option value="CRMJ">CRMJ</option>
+                        <option value="ECED">ECED</option>
+                        <option value="ECON">ECON</option>
+                        <option value="EDUC">EDUC</option>
+                        <option value="ELED">ELED</option>
+                        <option value="FA">FA</option>
+                        <option value="FNAN">FNAN</option>
+                        <option value="FREN">FREN</option>
+                        <option value="GER">GER</option>
+                        <option value="GRK">GRK</option>
+                        <option value="ECED">ECED</option>
+                        <option value="HCM">HCM</option>
+                        <option value="HEB">HEB</option>
+                        <option value="HIST">HIST</option>
+                        <option value="HRM">HRM</option>
+                        <option value="HS">HS</option>
+                        <option value="HUM">HUM</option>
+                        <option value="INT">INT</option>
+                        <option value="ITSC">ITSC</option>
+                        <option value="JRNL">JRNL</option>
+                        <option value="KINE">KINE</option>
+                        <option value="LANG">LANG</option>
+                        <option value="LIT">LIT</option>
+                        <option value="MATH">MATH</option>
+                        <option value="MF">MF</option>
+                        <option value="MH">MH</option>
+                        <option value="MIN">MIN</option>
+                        <option value="MINP">MINP</option>
+                        <option value="MSL">MSL</option>
+                        <option value="MUAP">MUAP</option>
+                        <option value="MUED">MUED</option>
+                        <option value="MUEN">MUEN</option>
+                        <option value="MULH">MULH</option>
+                        <option value="MUTH">MUTH</option>
+                        <option value="MUWA">MUWA</option>
+                        <option value="NPM">NPM</option>
+                        <option value="NS">NS</option>
+                        <option value="NUR">NUR</option>
+                        <option value="ORGM">ORGM</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="PHYS">PHYS</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SCED">SCED</option>
+                        <option value="SOC">SOC</option>
+                        <option value="SPAN">SPAN</option>
+                        <option value="SPED">SPED</option>
+                        <option value="SS">SS</option>
+                        <option value="THEO">THEO</option>
+                        <option value="THTR">THTR</option>
+                        <option value="WRIT">WRIT</option>
+                        <option value="YMN">YMN</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="code"></label>
+                    <select id="code" name="code">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </td>
+                
+                <td>
+                    
+                </td>
+                <td>
+                    
+                </td>
+                </form>
+            </tr>
+            <tr>
+                <td>
+                <form oninput="outputResult.value = course1.value">
+                    <label for="department"></label>
+                    <select id="department" name="department">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value="CSC">CSC</option>
+                        <option value="MATH">MATH</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="BIBL">BIBL</option>
+                        <option value="ENGL">ENGL</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SOC">SOC</option>
+                        <option value="THEO">THEO</option>
+                        <option value="KINE">KINE</option>
+                        <option value="KINE">COMM</option>
+                        <option value="KINE">BADM</option>
+                        <option value="KINE">WRIT</option>
+                        <option value="KINE">AART</option>
+                        <option value="KINE">KINE</option>
+                        <option value="ACCT">ACCT</option>
+                        <option value="ADC">ADC</option>
+                        <option value="APOL">APOL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="BSS">BSS</option>
+                        <option value="BIOL">BIOL</option>
+                        <option value="CAPP">CAPP</option>
+                        <option value="CHEM">CHEM</option>
+                        <option value="CHI">CHI</option>
+                        <option value="COL">COL</option>
+                        <option value="CRMJ">CRMJ</option>
+                        <option value="ECED">ECED</option>
+                        <option value="ECON">ECON</option>
+                        <option value="EDUC">EDUC</option>
+                        <option value="ELED">ELED</option>
+                        <option value="FA">FA</option>
+                        <option value="FNAN">FNAN</option>
+                        <option value="FREN">FREN</option>
+                        <option value="GER">GER</option>
+                        <option value="GRK">GRK</option>
+                        <option value="ECED">ECED</option>
+                        <option value="HCM">HCM</option>
+                        <option value="HEB">HEB</option>
+                        <option value="HIST">HIST</option>
+                        <option value="HRM">HRM</option>
+                        <option value="HS">HS</option>
+                        <option value="HUM">HUM</option>
+                        <option value="INT">INT</option>
+                        <option value="ITSC">ITSC</option>
+                        <option value="JRNL">JRNL</option>
+                        <option value="KINE">KINE</option>
+                        <option value="LANG">LANG</option>
+                        <option value="LIT">LIT</option>
+                        <option value="MATH">MATH</option>
+                        <option value="MF">MF</option>
+                        <option value="MH">MH</option>
+                        <option value="MIN">MIN</option>
+                        <option value="MINP">MINP</option>
+                        <option value="MSL">MSL</option>
+                        <option value="MUAP">MUAP</option>
+                        <option value="MUED">MUED</option>
+                        <option value="MUEN">MUEN</option>
+                        <option value="MULH">MULH</option>
+                        <option value="MUTH">MUTH</option>
+                        <option value="MUWA">MUWA</option>
+                        <option value="NPM">NPM</option>
+                        <option value="NS">NS</option>
+                        <option value="NUR">NUR</option>
+                        <option value="ORGM">ORGM</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="PHYS">PHYS</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SCED">SCED</option>
+                        <option value="SOC">SOC</option>
+                        <option value="SPAN">SPAN</option>
+                        <option value="SPED">SPED</option>
+                        <option value="SS">SS</option>
+                        <option value="THEO">THEO</option>
+                        <option value="THTR">THTR</option>
+                        <option value="WRIT">WRIT</option>
+                        <option value="YMN">YMN</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="code"></label>
+                    <select id="code" name="code">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </td>
+                
+                <td>
+                    
+                </td>
+                <td>
+                    
+                </td>
+                </form>
+            </tr>
+            <tr>
+                <td>
+                <form oninput="outputResult.value = course1.value">
+                    <label for="department"></label>
+                    <select id="department" name="department">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value="CSC">CSC</option>
+                        <option value="MATH">MATH</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="BIBL">BIBL</option>
+                        <option value="ENGL">ENGL</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SOC">SOC</option>
+                        <option value="THEO">THEO</option>
+                        <option value="KINE">KINE</option>
+                        <option value="KINE">COMM</option>
+                        <option value="KINE">BADM</option>
+                        <option value="KINE">WRIT</option>
+                        <option value="KINE">AART</option>
+                        <option value="KINE">KINE</option>
+                        <option value="ACCT">ACCT</option>
+                        <option value="ADC">ADC</option>
+                        <option value="APOL">APOL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="BSS">BSS</option>
+                        <option value="BIOL">BIOL</option>
+                        <option value="CAPP">CAPP</option>
+                        <option value="CHEM">CHEM</option>
+                        <option value="CHI">CHI</option>
+                        <option value="COL">COL</option>
+                        <option value="CRMJ">CRMJ</option>
+                        <option value="ECED">ECED</option>
+                        <option value="ECON">ECON</option>
+                        <option value="EDUC">EDUC</option>
+                        <option value="ELED">ELED</option>
+                        <option value="FA">FA</option>
+                        <option value="FNAN">FNAN</option>
+                        <option value="FREN">FREN</option>
+                        <option value="GER">GER</option>
+                        <option value="GRK">GRK</option>
+                        <option value="ECED">ECED</option>
+                        <option value="HCM">HCM</option>
+                        <option value="HEB">HEB</option>
+                        <option value="HIST">HIST</option>
+                        <option value="HRM">HRM</option>
+                        <option value="HS">HS</option>
+                        <option value="HUM">HUM</option>
+                        <option value="INT">INT</option>
+                        <option value="ITSC">ITSC</option>
+                        <option value="JRNL">JRNL</option>
+                        <option value="KINE">KINE</option>
+                        <option value="LANG">LANG</option>
+                        <option value="LIT">LIT</option>
+                        <option value="MATH">MATH</option>
+                        <option value="MF">MF</option>
+                        <option value="MH">MH</option>
+                        <option value="MIN">MIN</option>
+                        <option value="MINP">MINP</option>
+                        <option value="MSL">MSL</option>
+                        <option value="MUAP">MUAP</option>
+                        <option value="MUED">MUED</option>
+                        <option value="MUEN">MUEN</option>
+                        <option value="MULH">MULH</option>
+                        <option value="MUTH">MUTH</option>
+                        <option value="MUWA">MUWA</option>
+                        <option value="NPM">NPM</option>
+                        <option value="NS">NS</option>
+                        <option value="NUR">NUR</option>
+                        <option value="ORGM">ORGM</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="PHYS">PHYS</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SCED">SCED</option>
+                        <option value="SOC">SOC</option>
+                        <option value="SPAN">SPAN</option>
+                        <option value="SPED">SPED</option>
+                        <option value="SS">SS</option>
+                        <option value="THEO">THEO</option>
+                        <option value="THTR">THTR</option>
+                        <option value="WRIT">WRIT</option>
+                        <option value="YMN">YMN</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="code"></label>
+                    <select id="code" name="code">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </td>
+                
+                <td>
+                    
+                </td>
+                <td>
+                    
+                </td>
+                </form>
+            </tr>
+            <tr>
+                <td>
+                <form oninput="outputResult.value = course1.value">
+                    <label for="department"></label>
+                    <select id="department" name="department">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value="CSC">CSC</option>
+                        <option value="MATH">MATH</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="BIBL">BIBL</option>
+                        <option value="ENGL">ENGL</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SOC">SOC</option>
+                        <option value="THEO">THEO</option>
+                        <option value="KINE">KINE</option>
+                        <option value="KINE">COMM</option>
+                        <option value="KINE">BADM</option>
+                        <option value="KINE">WRIT</option>
+                        <option value="KINE">AART</option>
+                        <option value="KINE">KINE</option>
+                        <option value="ACCT">ACCT</option>
+                        <option value="ADC">ADC</option>
+                        <option value="APOL">APOL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="BSS">BSS</option>
+                        <option value="BIOL">BIOL</option>
+                        <option value="CAPP">CAPP</option>
+                        <option value="CHEM">CHEM</option>
+                        <option value="CHI">CHI</option>
+                        <option value="COL">COL</option>
+                        <option value="CRMJ">CRMJ</option>
+                        <option value="ECED">ECED</option>
+                        <option value="ECON">ECON</option>
+                        <option value="EDUC">EDUC</option>
+                        <option value="ELED">ELED</option>
+                        <option value="FA">FA</option>
+                        <option value="FNAN">FNAN</option>
+                        <option value="FREN">FREN</option>
+                        <option value="GER">GER</option>
+                        <option value="GRK">GRK</option>
+                        <option value="ECED">ECED</option>
+                        <option value="HCM">HCM</option>
+                        <option value="HEB">HEB</option>
+                        <option value="HIST">HIST</option>
+                        <option value="HRM">HRM</option>
+                        <option value="HS">HS</option>
+                        <option value="HUM">HUM</option>
+                        <option value="INT">INT</option>
+                        <option value="ITSC">ITSC</option>
+                        <option value="JRNL">JRNL</option>
+                        <option value="KINE">KINE</option>
+                        <option value="LANG">LANG</option>
+                        <option value="LIT">LIT</option>
+                        <option value="MATH">MATH</option>
+                        <option value="MF">MF</option>
+                        <option value="MH">MH</option>
+                        <option value="MIN">MIN</option>
+                        <option value="MINP">MINP</option>
+                        <option value="MSL">MSL</option>
+                        <option value="MUAP">MUAP</option>
+                        <option value="MUED">MUED</option>
+                        <option value="MUEN">MUEN</option>
+                        <option value="MULH">MULH</option>
+                        <option value="MUTH">MUTH</option>
+                        <option value="MUWA">MUWA</option>
+                        <option value="NPM">NPM</option>
+                        <option value="NS">NS</option>
+                        <option value="NUR">NUR</option>
+                        <option value="ORGM">ORGM</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="PHYS">PHYS</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SCED">SCED</option>
+                        <option value="SOC">SOC</option>
+                        <option value="SPAN">SPAN</option>
+                        <option value="SPED">SPED</option>
+                        <option value="SS">SS</option>
+                        <option value="THEO">THEO</option>
+                        <option value="THTR">THTR</option>
+                        <option value="WRIT">WRIT</option>
+                        <option value="YMN">YMN</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="code"></label>
+                    <select id="code" name="code">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </td>
+                
+                <td>
+                    
+                </td>
+                <td>
+                    
+                </td>
+                </form>
+            </tr>
+            
         </table>
+        
 
         <table class="table" style="float: right;">
             <tr>
-                <th colspan="4">Semester S2024</th>
+                <th colspan="4">Winter/Summer 2024</th>
+            </tr>
+            <tr>
+                <th>Depart</th>
+                <th>Code</th>
+                <th>Name</th>
+                <th>Credits</th>
+            </tr>
+            <!-- Sample course data row for left column -->
+            
+            <tr>
+                <td>
+                <form oninput="outputResult.value = course1.value">
+                    <label for="department"></label>
+                    <select id="department" name="department">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value="CSC">CSC</option>
+                        <option value="MATH">MATH</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="BIBL">BIBL</option>
+                        <option value="ENGL">ENGL</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SOC">SOC</option>
+                        <option value="THEO">THEO</option>
+                        <option value="KINE">KINE</option>
+                        <option value="KINE">COMM</option>
+                        <option value="KINE">BADM</option>
+                        <option value="KINE">WRIT</option>
+                        <option value="KINE">AART</option>
+                        <option value="KINE">KINE</option>
+                        <option value="ACCT">ACCT</option>
+                        <option value="ADC">ADC</option>
+                        <option value="APOL">APOL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="BSS">BSS</option>
+                        <option value="BIOL">BIOL</option>
+                        <option value="CAPP">CAPP</option>
+                        <option value="CHEM">CHEM</option>
+                        <option value="CHI">CHI</option>
+                        <option value="COL">COL</option>
+                        <option value="CRMJ">CRMJ</option>
+                        <option value="ECED">ECED</option>
+                        <option value="ECON">ECON</option>
+                        <option value="EDUC">EDUC</option>
+                        <option value="ELED">ELED</option>
+                        <option value="FA">FA</option>
+                        <option value="FNAN">FNAN</option>
+                        <option value="FREN">FREN</option>
+                        <option value="GER">GER</option>
+                        <option value="GRK">GRK</option>
+                        <option value="ECED">ECED</option>
+                        <option value="HCM">HCM</option>
+                        <option value="HEB">HEB</option>
+                        <option value="HIST">HIST</option>
+                        <option value="HRM">HRM</option>
+                        <option value="HS">HS</option>
+                        <option value="HUM">HUM</option>
+                        <option value="INT">INT</option>
+                        <option value="ITSC">ITSC</option>
+                        <option value="JRNL">JRNL</option>
+                        <option value="KINE">KINE</option>
+                        <option value="LANG">LANG</option>
+                        <option value="LIT">LIT</option>
+                        <option value="MATH">MATH</option>
+                        <option value="MF">MF</option>
+                        <option value="MH">MH</option>
+                        <option value="MIN">MIN</option>
+                        <option value="MINP">MINP</option>
+                        <option value="MSL">MSL</option>
+                        <option value="MUAP">MUAP</option>
+                        <option value="MUED">MUED</option>
+                        <option value="MUEN">MUEN</option>
+                        <option value="MULH">MULH</option>
+                        <option value="MUTH">MUTH</option>
+                        <option value="MUWA">MUWA</option>
+                        <option value="NPM">NPM</option>
+                        <option value="NS">NS</option>
+                        <option value="NUR">NUR</option>
+                        <option value="ORGM">ORGM</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="PHYS">PHYS</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SCED">SCED</option>
+                        <option value="SOC">SOC</option>
+                        <option value="SPAN">SPAN</option>
+                        <option value="SPED">SPED</option>
+                        <option value="SS">SS</option>
+                        <option value="THEO">THEO</option>
+                        <option value="THTR">THTR</option>
+                        <option value="WRIT">WRIT</option>
+                        <option value="YMN">YMN</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="code"></label>
+                    <select id="code" name="code">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </td>
+                
+                <td>
+                    
+                </td>
+                <td>
+                    
+                </td>
+                </form>
+            </tr>
+            <tr>
+                <td>
+                <form oninput="outputResult.value = course1.value">
+                    <label for="department"></label>
+                    <select id="department" name="department">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value="CSC">CSC</option>
+                        <option value="MATH">MATH</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="BIBL">BIBL</option>
+                        <option value="ENGL">ENGL</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SOC">SOC</option>
+                        <option value="THEO">THEO</option>
+                        <option value="KINE">KINE</option>
+                        <option value="KINE">COMM</option>
+                        <option value="KINE">BADM</option>
+                        <option value="KINE">WRIT</option>
+                        <option value="KINE">AART</option>
+                        <option value="KINE">KINE</option>
+                        <option value="ACCT">ACCT</option>
+                        <option value="ADC">ADC</option>
+                        <option value="APOL">APOL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="BSS">BSS</option>
+                        <option value="BIOL">BIOL</option>
+                        <option value="CAPP">CAPP</option>
+                        <option value="CHEM">CHEM</option>
+                        <option value="CHI">CHI</option>
+                        <option value="COL">COL</option>
+                        <option value="CRMJ">CRMJ</option>
+                        <option value="ECED">ECED</option>
+                        <option value="ECON">ECON</option>
+                        <option value="EDUC">EDUC</option>
+                        <option value="ELED">ELED</option>
+                        <option value="FA">FA</option>
+                        <option value="FNAN">FNAN</option>
+                        <option value="FREN">FREN</option>
+                        <option value="GER">GER</option>
+                        <option value="GRK">GRK</option>
+                        <option value="ECED">ECED</option>
+                        <option value="HCM">HCM</option>
+                        <option value="HEB">HEB</option>
+                        <option value="HIST">HIST</option>
+                        <option value="HRM">HRM</option>
+                        <option value="HS">HS</option>
+                        <option value="HUM">HUM</option>
+                        <option value="INT">INT</option>
+                        <option value="ITSC">ITSC</option>
+                        <option value="JRNL">JRNL</option>
+                        <option value="KINE">KINE</option>
+                        <option value="LANG">LANG</option>
+                        <option value="LIT">LIT</option>
+                        <option value="MATH">MATH</option>
+                        <option value="MF">MF</option>
+                        <option value="MH">MH</option>
+                        <option value="MIN">MIN</option>
+                        <option value="MINP">MINP</option>
+                        <option value="MSL">MSL</option>
+                        <option value="MUAP">MUAP</option>
+                        <option value="MUED">MUED</option>
+                        <option value="MUEN">MUEN</option>
+                        <option value="MULH">MULH</option>
+                        <option value="MUTH">MUTH</option>
+                        <option value="MUWA">MUWA</option>
+                        <option value="NPM">NPM</option>
+                        <option value="NS">NS</option>
+                        <option value="NUR">NUR</option>
+                        <option value="ORGM">ORGM</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="PHYS">PHYS</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SCED">SCED</option>
+                        <option value="SOC">SOC</option>
+                        <option value="SPAN">SPAN</option>
+                        <option value="SPED">SPED</option>
+                        <option value="SS">SS</option>
+                        <option value="THEO">THEO</option>
+                        <option value="THTR">THTR</option>
+                        <option value="WRIT">WRIT</option>
+                        <option value="YMN">YMN</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="code"></label>
+                    <select id="code" name="code">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </td>
+                
+                <td>
+                    
+                </td>
+                <td>
+                    
+                </td>
+                </form>
+            </tr>
+            <tr>
+                <td>
+                <form oninput="outputResult.value = course1.value">
+                    <label for="department"></label>
+                    <select id="department" name="department">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value="CSC">CSC</option>
+                        <option value="MATH">MATH</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="BIBL">BIBL</option>
+                        <option value="ENGL">ENGL</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SOC">SOC</option>
+                        <option value="THEO">THEO</option>
+                        <option value="KINE">KINE</option>
+                        <option value="KINE">COMM</option>
+                        <option value="KINE">BADM</option>
+                        <option value="KINE">WRIT</option>
+                        <option value="KINE">AART</option>
+                        <option value="KINE">KINE</option>
+                        <option value="ACCT">ACCT</option>
+                        <option value="ADC">ADC</option>
+                        <option value="APOL">APOL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="BSS">BSS</option>
+                        <option value="BIOL">BIOL</option>
+                        <option value="CAPP">CAPP</option>
+                        <option value="CHEM">CHEM</option>
+                        <option value="CHI">CHI</option>
+                        <option value="COL">COL</option>
+                        <option value="CRMJ">CRMJ</option>
+                        <option value="ECED">ECED</option>
+                        <option value="ECON">ECON</option>
+                        <option value="EDUC">EDUC</option>
+                        <option value="ELED">ELED</option>
+                        <option value="FA">FA</option>
+                        <option value="FNAN">FNAN</option>
+                        <option value="FREN">FREN</option>
+                        <option value="GER">GER</option>
+                        <option value="GRK">GRK</option>
+                        <option value="ECED">ECED</option>
+                        <option value="HCM">HCM</option>
+                        <option value="HEB">HEB</option>
+                        <option value="HIST">HIST</option>
+                        <option value="HRM">HRM</option>
+                        <option value="HS">HS</option>
+                        <option value="HUM">HUM</option>
+                        <option value="INT">INT</option>
+                        <option value="ITSC">ITSC</option>
+                        <option value="JRNL">JRNL</option>
+                        <option value="KINE">KINE</option>
+                        <option value="LANG">LANG</option>
+                        <option value="LIT">LIT</option>
+                        <option value="MATH">MATH</option>
+                        <option value="MF">MF</option>
+                        <option value="MH">MH</option>
+                        <option value="MIN">MIN</option>
+                        <option value="MINP">MINP</option>
+                        <option value="MSL">MSL</option>
+                        <option value="MUAP">MUAP</option>
+                        <option value="MUED">MUED</option>
+                        <option value="MUEN">MUEN</option>
+                        <option value="MULH">MULH</option>
+                        <option value="MUTH">MUTH</option>
+                        <option value="MUWA">MUWA</option>
+                        <option value="NPM">NPM</option>
+                        <option value="NS">NS</option>
+                        <option value="NUR">NUR</option>
+                        <option value="ORGM">ORGM</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="PHYS">PHYS</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SCED">SCED</option>
+                        <option value="SOC">SOC</option>
+                        <option value="SPAN">SPAN</option>
+                        <option value="SPED">SPED</option>
+                        <option value="SS">SS</option>
+                        <option value="THEO">THEO</option>
+                        <option value="THTR">THTR</option>
+                        <option value="WRIT">WRIT</option>
+                        <option value="YMN">YMN</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="code"></label>
+                    <select id="code" name="code">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </td>
+                
+                <td>
+                    
+                </td>
+                <td>
+                    
+                </td>
+                </form>
+            </tr>
+            <tr>
+                <td>
+                <form oninput="outputResult.value = course1.value">
+                    <label for="department"></label>
+                    <select id="department" name="department">
+                        <option value=""></option>
+                        <option value="CSC">CSC</option>
+                        <option value="MATH">MATH</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="BIBL">BIBL</option>
+                        <option value="ENGL">ENGL</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SOC">SOC</option>
+                        <option value="THEO">THEO</option>
+                        <option value="KINE">KINE</option>
+                        <option value="KINE">COMM</option>
+                        <option value="KINE">BADM</option>
+                        <option value="KINE">WRIT</option>
+                        <option value="KINE">AART</option>
+                        <option value="KINE">KINE</option>
+                        <option value="ACCT">ACCT</option>
+                        <option value="ADC">ADC</option>
+                        <option value="APOL">APOL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="BSS">BSS</option>
+                        <option value="BIOL">BIOL</option>
+                        <option value="CAPP">CAPP</option>
+                        <option value="CHEM">CHEM</option>
+                        <option value="CHI">CHI</option>
+                        <option value="COL">COL</option>
+                        <option value="CRMJ">CRMJ</option>
+                        <option value="ECED">ECED</option>
+                        <option value="ECON">ECON</option>
+                        <option value="EDUC">EDUC</option>
+                        <option value="ELED">ELED</option>
+                        <option value="FA">FA</option>
+                        <option value="FNAN">FNAN</option>
+                        <option value="FREN">FREN</option>
+                        <option value="GER">GER</option>
+                        <option value="GRK">GRK</option>
+                        <option value="ECED">ECED</option>
+                        <option value="HCM">HCM</option>
+                        <option value="HEB">HEB</option>
+                        <option value="HIST">HIST</option>
+                        <option value="HRM">HRM</option>
+                        <option value="HS">HS</option>
+                        <option value="HUM">HUM</option>
+                        <option value="INT">INT</option>
+                        <option value="ITSC">ITSC</option>
+                        <option value="JRNL">JRNL</option>
+                        <option value="KINE">KINE</option>
+                        <option value="LANG">LANG</option>
+                        <option value="LIT">LIT</option>
+                        <option value="MATH">MATH</option>
+                        <option value="MF">MF</option>
+                        <option value="MH">MH</option>
+                        <option value="MIN">MIN</option>
+                        <option value="MINP">MINP</option>
+                        <option value="MSL">MSL</option>
+                        <option value="MUAP">MUAP</option>
+                        <option value="MUED">MUED</option>
+                        <option value="MUEN">MUEN</option>
+                        <option value="MULH">MULH</option>
+                        <option value="MUTH">MUTH</option>
+                        <option value="MUWA">MUWA</option>
+                        <option value="NPM">NPM</option>
+                        <option value="NS">NS</option>
+                        <option value="NUR">NUR</option>
+                        <option value="ORGM">ORGM</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="PHYS">PHYS</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SCED">SCED</option>
+                        <option value="SOC">SOC</option>
+                        <option value="SPAN">SPAN</option>
+                        <option value="SPED">SPED</option>
+                        <option value="SS">SS</option>
+                        <option value="THEO">THEO</option>
+                        <option value="THTR">THTR</option>
+                        <option value="WRIT">WRIT</option>
+                        <option value="YMN">YMN</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="code"></label>
+                    <select id="code" name="code">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </td>
+                
+                <td>
+                    
+                </td>
+                <td>
+                    
+                </td>
+                </form>
+            </tr>
+            <tr>
+                <td>
+                <form oninput="outputResult.value = course1.value">
+                    <label for="department"></label>
+                    <select id="department" name="department">
+                        <option value=""></option>
+                        <option value="CSC">CSC</option>
+                        <option value="MATH">MATH</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="BIBL">BIBL</option>
+                        <option value="ENGL">ENGL</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SOC">SOC</option>
+                        <option value="THEO">THEO</option>
+                        <option value="KINE">KINE</option>
+                        <option value="KINE">COMM</option>
+                        <option value="KINE">BADM</option>
+                        <option value="KINE">WRIT</option>
+                        <option value="KINE">AART</option>
+                        <option value="KINE">KINE</option>
+                        <option value="ACCT">ACCT</option>
+                        <option value="ADC">ADC</option>
+                        <option value="APOL">APOL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="BSS">BSS</option>
+                        <option value="BIOL">BIOL</option>
+                        <option value="CAPP">CAPP</option>
+                        <option value="CHEM">CHEM</option>
+                        <option value="CHI">CHI</option>
+                        <option value="COL">COL</option>
+                        <option value="CRMJ">CRMJ</option>
+                        <option value="ECED">ECED</option>
+                        <option value="ECON">ECON</option>
+                        <option value="EDUC">EDUC</option>
+                        <option value="ELED">ELED</option>
+                        <option value="FA">FA</option>
+                        <option value="FNAN">FNAN</option>
+                        <option value="FREN">FREN</option>
+                        <option value="GER">GER</option>
+                        <option value="GRK">GRK</option>
+                        <option value="ECED">ECED</option>
+                        <option value="HCM">HCM</option>
+                        <option value="HEB">HEB</option>
+                        <option value="HIST">HIST</option>
+                        <option value="HRM">HRM</option>
+                        <option value="HS">HS</option>
+                        <option value="HUM">HUM</option>
+                        <option value="INT">INT</option>
+                        <option value="ITSC">ITSC</option>
+                        <option value="JRNL">JRNL</option>
+                        <option value="KINE">KINE</option>
+                        <option value="LANG">LANG</option>
+                        <option value="LIT">LIT</option>
+                        <option value="MATH">MATH</option>
+                        <option value="MF">MF</option>
+                        <option value="MH">MH</option>
+                        <option value="MIN">MIN</option>
+                        <option value="MINP">MINP</option>
+                        <option value="MSL">MSL</option>
+                        <option value="MUAP">MUAP</option>
+                        <option value="MUED">MUED</option>
+                        <option value="MUEN">MUEN</option>
+                        <option value="MULH">MULH</option>
+                        <option value="MUTH">MUTH</option>
+                        <option value="MUWA">MUWA</option>
+                        <option value="NPM">NPM</option>
+                        <option value="NS">NS</option>
+                        <option value="NUR">NUR</option>
+                        <option value="ORGM">ORGM</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="PHYS">PHYS</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SCED">SCED</option>
+                        <option value="SOC">SOC</option>
+                        <option value="SPAN">SPAN</option>
+                        <option value="SPED">SPED</option>
+                        <option value="SS">SS</option>
+                        <option value="THEO">THEO</option>
+                        <option value="THTR">THTR</option>
+                        <option value="WRIT">WRIT</option>
+                        <option value="YMN">YMN</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="code"></label>
+                    <select id="code" name="code">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </td>
+                
+                <td>
+                    
+                </td>
+                <td>
+                    
+                </td>
+                </form>
+            </tr>
+        </table>
+        
+        <!-- Button to trigger JavaScript function "AddYear()" when clicked -->
+   <!-- <center><button onclick=AddYear()>Add Year</button></center>-->
+    </div>
+    <div class="table-container">
+        <table class="table" style="float: left;">
+            <tr>
+                <th colspan="4">Spring 2025</th>
             </tr>
             <tr>
                 <th>Depart</th>
@@ -182,6 +1706,73 @@
                         <option value="SOC">SOC</option>
                         <option value="THEO">THEO</option>
                         <option value="KINE">KINE</option>
+                        <option value="KINE">COMM</option>
+                        <option value="KINE">BADM</option>
+                        <option value="KINE">WRIT</option>
+                        <option value="KINE">AART</option>
+                        <option value="KINE">KINE</option>
+                        <option value="ACCT">ACCT</option>
+                        <option value="ADC">ADC</option>
+                        <option value="APOL">APOL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="BSS">BSS</option>
+                        <option value="BIOL">BIOL</option>
+                        <option value="CAPP">CAPP</option>
+                        <option value="CHEM">CHEM</option>
+                        <option value="CHI">CHI</option>
+                        <option value="COL">COL</option>
+                        <option value="CRMJ">CRMJ</option>
+                        <option value="ECED">ECED</option>
+                        <option value="ECON">ECON</option>
+                        <option value="EDUC">EDUC</option>
+                        <option value="ELED">ELED</option>
+                        <option value="FA">FA</option>
+                        <option value="FNAN">FNAN</option>
+                        <option value="FREN">FREN</option>
+                        <option value="GER">GER</option>
+                        <option value="GRK">GRK</option>
+                        <option value="ECED">ECED</option>
+                        <option value="HCM">HCM</option>
+                        <option value="HEB">HEB</option>
+                        <option value="HIST">HIST</option>
+                        <option value="HRM">HRM</option>
+                        <option value="HS">HS</option>
+                        <option value="HUM">HUM</option>
+                        <option value="INT">INT</option>
+                        <option value="ITSC">ITSC</option>
+                        <option value="JRNL">JRNL</option>
+                        <option value="KINE">KINE</option>
+                        <option value="LANG">LANG</option>
+                        <option value="LIT">LIT</option>
+                        <option value="MATH">MATH</option>
+                        <option value="MF">MF</option>
+                        <option value="MH">MH</option>
+                        <option value="MIN">MIN</option>
+                        <option value="MINP">MINP</option>
+                        <option value="MSL">MSL</option>
+                        <option value="MUAP">MUAP</option>
+                        <option value="MUED">MUED</option>
+                        <option value="MUEN">MUEN</option>
+                        <option value="MULH">MULH</option>
+                        <option value="MUTH">MUTH</option>
+                        <option value="MUWA">MUWA</option>
+                        <option value="NPM">NPM</option>
+                        <option value="NS">NS</option>
+                        <option value="NUR">NUR</option>
+                        <option value="ORGM">ORGM</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="PHYS">PHYS</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SCED">SCED</option>
+                        <option value="SOC">SOC</option>
+                        <option value="SPAN">SPAN</option>
+                        <option value="SPED">SPED</option>
+                        <option value="SS">SS</option>
+                        <option value="THEO">THEO</option>
+                        <option value="THTR">THTR</option>
+                        <option value="WRIT">WRIT</option>
+                        <option value="YMN">YMN</option>
                     </select>
                 </td>
                 <td>
@@ -195,15 +1786,1504 @@
                         <option value=""></option>
                     </select>
                 </td>
-                <label for="outputResult"></label>
-                    <output id="outputResult" name="outputResult" for="course1">
-                    </output>
+                
+                <td>
+                    
+                </td>
+                <td>
+                    
+                </td>
+                </form>
+            </tr>
+            <tr>
+                <td>
+                <form oninput="outputResult.value = course1.value">
+                    <label for="department"></label>
+                    <select id="department" name="department">
+                        <option value=""></option>
+                        <option value="CSC">CSC</option>
+                        <option value="MATH">MATH</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="BIBL">BIBL</option>
+                        <option value="ENGL">ENGL</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SOC">SOC</option>
+                        <option value="THEO">THEO</option>
+                        <option value="KINE">KINE</option>
+                        <option value="KINE">COMM</option>
+                        <option value="KINE">BADM</option>
+                        <option value="KINE">WRIT</option>
+                        <option value="KINE">AART</option>
+                        <option value="KINE">KINE</option>
+                        <option value="ACCT">ACCT</option>
+                        <option value="ADC">ADC</option>
+                        <option value="APOL">APOL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="BSS">BSS</option>
+                        <option value="BIOL">BIOL</option>
+                        <option value="CAPP">CAPP</option>
+                        <option value="CHEM">CHEM</option>
+                        <option value="CHI">CHI</option>
+                        <option value="COL">COL</option>
+                        <option value="CRMJ">CRMJ</option>
+                        <option value="ECED">ECED</option>
+                        <option value="ECON">ECON</option>
+                        <option value="EDUC">EDUC</option>
+                        <option value="ELED">ELED</option>
+                        <option value="FA">FA</option>
+                        <option value="FNAN">FNAN</option>
+                        <option value="FREN">FREN</option>
+                        <option value="GER">GER</option>
+                        <option value="GRK">GRK</option>
+                        <option value="ECED">ECED</option>
+                        <option value="HCM">HCM</option>
+                        <option value="HEB">HEB</option>
+                        <option value="HIST">HIST</option>
+                        <option value="HRM">HRM</option>
+                        <option value="HS">HS</option>
+                        <option value="HUM">HUM</option>
+                        <option value="INT">INT</option>
+                        <option value="ITSC">ITSC</option>
+                        <option value="JRNL">JRNL</option>
+                        <option value="KINE">KINE</option>
+                        <option value="LANG">LANG</option>
+                        <option value="LIT">LIT</option>
+                        <option value="MATH">MATH</option>
+                        <option value="MF">MF</option>
+                        <option value="MH">MH</option>
+                        <option value="MIN">MIN</option>
+                        <option value="MINP">MINP</option>
+                        <option value="MSL">MSL</option>
+                        <option value="MUAP">MUAP</option>
+                        <option value="MUED">MUED</option>
+                        <option value="MUEN">MUEN</option>
+                        <option value="MULH">MULH</option>
+                        <option value="MUTH">MUTH</option>
+                        <option value="MUWA">MUWA</option>
+                        <option value="NPM">NPM</option>
+                        <option value="NS">NS</option>
+                        <option value="NUR">NUR</option>
+                        <option value="ORGM">ORGM</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="PHYS">PHYS</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SCED">SCED</option>
+                        <option value="SOC">SOC</option>
+                        <option value="SPAN">SPAN</option>
+                        <option value="SPED">SPED</option>
+                        <option value="SS">SS</option>
+                        <option value="THEO">THEO</option>
+                        <option value="THTR">THTR</option>
+                        <option value="WRIT">WRIT</option>
+                        <option value="YMN">YMN</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="code"></label>
+                    <select id="code" name="code">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </td>
+                
+                <td>
+                    
+                </td>
+                <td>
+                    
+                </td>
+                </form>
+            </tr>
+            <tr>
+                <td>
+                <form oninput="outputResult.value = course1.value">
+                    <label for="department"></label>
+                    <select id="department" name="department">
+                        <option value=""></option>
+                        <option value="CSC">CSC</option>
+                        <option value="MATH">MATH</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="BIBL">BIBL</option>
+                        <option value="ENGL">ENGL</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SOC">SOC</option>
+                        <option value="THEO">THEO</option>
+                        <option value="KINE">KINE</option>
+                        <option value="KINE">COMM</option>
+                        <option value="KINE">BADM</option>
+                        <option value="KINE">WRIT</option>
+                        <option value="KINE">AART</option>
+                        <option value="KINE">KINE</option>
+                        <option value="ACCT">ACCT</option>
+                        <option value="ADC">ADC</option>
+                        <option value="APOL">APOL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="BSS">BSS</option>
+                        <option value="BIOL">BIOL</option>
+                        <option value="CAPP">CAPP</option>
+                        <option value="CHEM">CHEM</option>
+                        <option value="CHI">CHI</option>
+                        <option value="COL">COL</option>
+                        <option value="CRMJ">CRMJ</option>
+                        <option value="ECED">ECED</option>
+                        <option value="ECON">ECON</option>
+                        <option value="EDUC">EDUC</option>
+                        <option value="ELED">ELED</option>
+                        <option value="FA">FA</option>
+                        <option value="FNAN">FNAN</option>
+                        <option value="FREN">FREN</option>
+                        <option value="GER">GER</option>
+                        <option value="GRK">GRK</option>
+                        <option value="ECED">ECED</option>
+                        <option value="HCM">HCM</option>
+                        <option value="HEB">HEB</option>
+                        <option value="HIST">HIST</option>
+                        <option value="HRM">HRM</option>
+                        <option value="HS">HS</option>
+                        <option value="HUM">HUM</option>
+                        <option value="INT">INT</option>
+                        <option value="ITSC">ITSC</option>
+                        <option value="JRNL">JRNL</option>
+                        <option value="KINE">KINE</option>
+                        <option value="LANG">LANG</option>
+                        <option value="LIT">LIT</option>
+                        <option value="MATH">MATH</option>
+                        <option value="MF">MF</option>
+                        <option value="MH">MH</option>
+                        <option value="MIN">MIN</option>
+                        <option value="MINP">MINP</option>
+                        <option value="MSL">MSL</option>
+                        <option value="MUAP">MUAP</option>
+                        <option value="MUED">MUED</option>
+                        <option value="MUEN">MUEN</option>
+                        <option value="MULH">MULH</option>
+                        <option value="MUTH">MUTH</option>
+                        <option value="MUWA">MUWA</option>
+                        <option value="NPM">NPM</option>
+                        <option value="NS">NS</option>
+                        <option value="NUR">NUR</option>
+                        <option value="ORGM">ORGM</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="PHYS">PHYS</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SCED">SCED</option>
+                        <option value="SOC">SOC</option>
+                        <option value="SPAN">SPAN</option>
+                        <option value="SPED">SPED</option>
+                        <option value="SS">SS</option>
+                        <option value="THEO">THEO</option>
+                        <option value="THTR">THTR</option>
+                        <option value="WRIT">WRIT</option>
+                        <option value="YMN">YMN</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="code"></label>
+                    <select id="code" name="code">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </td>
+                
+                <td>
+                    
+                </td>
+                <td>
+                    
+                </td>
+                </form>
+            </tr>
+            <tr>
+                <td>
+                <form oninput="outputResult.value = course1.value">
+                    <label for="department"></label>
+                    <select id="department" name="department">
+                        <option value=""></option>
+                        <option value="CSC">CSC</option>
+                        <option value="MATH">MATH</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="BIBL">BIBL</option>
+                        <option value="ENGL">ENGL</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SOC">SOC</option>
+                        <option value="THEO">THEO</option>
+                        <option value="KINE">KINE</option>
+                        <option value="KINE">COMM</option>
+                        <option value="KINE">BADM</option>
+                        <option value="KINE">WRIT</option>
+                        <option value="KINE">AART</option>
+                        <option value="KINE">KINE</option>
+                        <option value="ACCT">ACCT</option>
+                        <option value="ADC">ADC</option>
+                        <option value="APOL">APOL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="BSS">BSS</option>
+                        <option value="BIOL">BIOL</option>
+                        <option value="CAPP">CAPP</option>
+                        <option value="CHEM">CHEM</option>
+                        <option value="CHI">CHI</option>
+                        <option value="COL">COL</option>
+                        <option value="CRMJ">CRMJ</option>
+                        <option value="ECED">ECED</option>
+                        <option value="ECON">ECON</option>
+                        <option value="EDUC">EDUC</option>
+                        <option value="ELED">ELED</option>
+                        <option value="FA">FA</option>
+                        <option value="FNAN">FNAN</option>
+                        <option value="FREN">FREN</option>
+                        <option value="GER">GER</option>
+                        <option value="GRK">GRK</option>
+                        <option value="ECED">ECED</option>
+                        <option value="HCM">HCM</option>
+                        <option value="HEB">HEB</option>
+                        <option value="HIST">HIST</option>
+                        <option value="HRM">HRM</option>
+                        <option value="HS">HS</option>
+                        <option value="HUM">HUM</option>
+                        <option value="INT">INT</option>
+                        <option value="ITSC">ITSC</option>
+                        <option value="JRNL">JRNL</option>
+                        <option value="KINE">KINE</option>
+                        <option value="LANG">LANG</option>
+                        <option value="LIT">LIT</option>
+                        <option value="MATH">MATH</option>
+                        <option value="MF">MF</option>
+                        <option value="MH">MH</option>
+                        <option value="MIN">MIN</option>
+                        <option value="MINP">MINP</option>
+                        <option value="MSL">MSL</option>
+                        <option value="MUAP">MUAP</option>
+                        <option value="MUED">MUED</option>
+                        <option value="MUEN">MUEN</option>
+                        <option value="MULH">MULH</option>
+                        <option value="MUTH">MUTH</option>
+                        <option value="MUWA">MUWA</option>
+                        <option value="NPM">NPM</option>
+                        <option value="NS">NS</option>
+                        <option value="NUR">NUR</option>
+                        <option value="ORGM">ORGM</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="PHYS">PHYS</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SCED">SCED</option>
+                        <option value="SOC">SOC</option>
+                        <option value="SPAN">SPAN</option>
+                        <option value="SPED">SPED</option>
+                        <option value="SS">SS</option>
+                        <option value="THEO">THEO</option>
+                        <option value="THTR">THTR</option>
+                        <option value="WRIT">WRIT</option>
+                        <option value="YMN">YMN</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="code"></label>
+                    <select id="code" name="code">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </td>
+                
+                <td>
+                    
+                </td>
+                <td>
+                    
+                </td>
+                </form>
+            </tr>
+            <tr>
+                <td>
+                <form oninput="outputResult.value = course1.value">
+                    <label for="department"></label>
+                    <select id="department" name="department">
+                        <option value=""></option>
+                        <option value="CSC">CSC</option>
+                        <option value="MATH">MATH</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="BIBL">BIBL</option>
+                        <option value="ENGL">ENGL</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SOC">SOC</option>
+                        <option value="THEO">THEO</option>
+                        <option value="KINE">KINE</option>
+                        <option value="KINE">COMM</option>
+                        <option value="KINE">BADM</option>
+                        <option value="KINE">WRIT</option>
+                        <option value="KINE">AART</option>
+                        <option value="KINE">KINE</option>
+                        <option value="ACCT">ACCT</option>
+                        <option value="ADC">ADC</option>
+                        <option value="APOL">APOL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="BSS">BSS</option>
+                        <option value="BIOL">BIOL</option>
+                        <option value="CAPP">CAPP</option>
+                        <option value="CHEM">CHEM</option>
+                        <option value="CHI">CHI</option>
+                        <option value="COL">COL</option>
+                        <option value="CRMJ">CRMJ</option>
+                        <option value="ECED">ECED</option>
+                        <option value="ECON">ECON</option>
+                        <option value="EDUC">EDUC</option>
+                        <option value="ELED">ELED</option>
+                        <option value="FA">FA</option>
+                        <option value="FNAN">FNAN</option>
+                        <option value="FREN">FREN</option>
+                        <option value="GER">GER</option>
+                        <option value="GRK">GRK</option>
+                        <option value="ECED">ECED</option>
+                        <option value="HCM">HCM</option>
+                        <option value="HEB">HEB</option>
+                        <option value="HIST">HIST</option>
+                        <option value="HRM">HRM</option>
+                        <option value="HS">HS</option>
+                        <option value="HUM">HUM</option>
+                        <option value="INT">INT</option>
+                        <option value="ITSC">ITSC</option>
+                        <option value="JRNL">JRNL</option>
+                        <option value="KINE">KINE</option>
+                        <option value="LANG">LANG</option>
+                        <option value="LIT">LIT</option>
+                        <option value="MATH">MATH</option>
+                        <option value="MF">MF</option>
+                        <option value="MH">MH</option>
+                        <option value="MIN">MIN</option>
+                        <option value="MINP">MINP</option>
+                        <option value="MSL">MSL</option>
+                        <option value="MUAP">MUAP</option>
+                        <option value="MUED">MUED</option>
+                        <option value="MUEN">MUEN</option>
+                        <option value="MULH">MULH</option>
+                        <option value="MUTH">MUTH</option>
+                        <option value="MUWA">MUWA</option>
+                        <option value="NPM">NPM</option>
+                        <option value="NS">NS</option>
+                        <option value="NUR">NUR</option>
+                        <option value="ORGM">ORGM</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="PHYS">PHYS</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SCED">SCED</option>
+                        <option value="SOC">SOC</option>
+                        <option value="SPAN">SPAN</option>
+                        <option value="SPED">SPED</option>
+                        <option value="SS">SS</option>
+                        <option value="THEO">THEO</option>
+                        <option value="THTR">THTR</option>
+                        <option value="WRIT">WRIT</option>
+                        <option value="YMN">YMN</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="code"></label>
+                    <select id="code" name="code">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </td>
+                
+                <td>
+                    
+                </td>
+                <td>
+                    
+                </td>
+                </form>
+            </tr>
+            
+            </table>
+
+        <table class="table" style="margin: 10 auto;">
+            <tr>
+                <th colspan="4">Fall 2025</th>
+            </tr>
+            <tr>
+                <th>Depart</th>
+                <th>Code</th>
+                <th>Name</th>
+                <th>Credits</th>
+            </tr>
+            <!-- Sample course data row for left column -->
+            
+            <tr>
+                <td>
+                <form oninput="outputResult.value = course1.value">
+                    <label for="department"></label>
+                    <select id="department" name="department">
+                        <option value=""></option>
+                        <option value="CSC">CSC</option>
+                        <option value="MATH">MATH</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="BIBL">BIBL</option>
+                        <option value="ENGL">ENGL</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SOC">SOC</option>
+                        <option value="THEO">THEO</option>
+                        <option value="KINE">KINE</option>
+                        <option value="KINE">COMM</option>
+                        <option value="KINE">BADM</option>
+                        <option value="KINE">WRIT</option>
+                        <option value="KINE">AART</option>
+                        <option value="KINE">KINE</option>
+                        <option value="ACCT">ACCT</option>
+                        <option value="ADC">ADC</option>
+                        <option value="APOL">APOL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="BSS">BSS</option>
+                        <option value="BIOL">BIOL</option>
+                        <option value="CAPP">CAPP</option>
+                        <option value="CHEM">CHEM</option>
+                        <option value="CHI">CHI</option>
+                        <option value="COL">COL</option>
+                        <option value="CRMJ">CRMJ</option>
+                        <option value="ECED">ECED</option>
+                        <option value="ECON">ECON</option>
+                        <option value="EDUC">EDUC</option>
+                        <option value="ELED">ELED</option>
+                        <option value="FA">FA</option>
+                        <option value="FNAN">FNAN</option>
+                        <option value="FREN">FREN</option>
+                        <option value="GER">GER</option>
+                        <option value="GRK">GRK</option>
+                        <option value="ECED">ECED</option>
+                        <option value="HCM">HCM</option>
+                        <option value="HEB">HEB</option>
+                        <option value="HIST">HIST</option>
+                        <option value="HRM">HRM</option>
+                        <option value="HS">HS</option>
+                        <option value="HUM">HUM</option>
+                        <option value="INT">INT</option>
+                        <option value="ITSC">ITSC</option>
+                        <option value="JRNL">JRNL</option>
+                        <option value="KINE">KINE</option>
+                        <option value="LANG">LANG</option>
+                        <option value="LIT">LIT</option>
+                        <option value="MATH">MATH</option>
+                        <option value="MF">MF</option>
+                        <option value="MH">MH</option>
+                        <option value="MIN">MIN</option>
+                        <option value="MINP">MINP</option>
+                        <option value="MSL">MSL</option>
+                        <option value="MUAP">MUAP</option>
+                        <option value="MUED">MUED</option>
+                        <option value="MUEN">MUEN</option>
+                        <option value="MULH">MULH</option>
+                        <option value="MUTH">MUTH</option>
+                        <option value="MUWA">MUWA</option>
+                        <option value="NPM">NPM</option>
+                        <option value="NS">NS</option>
+                        <option value="NUR">NUR</option>
+                        <option value="ORGM">ORGM</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="PHYS">PHYS</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SCED">SCED</option>
+                        <option value="SOC">SOC</option>
+                        <option value="SPAN">SPAN</option>
+                        <option value="SPED">SPED</option>
+                        <option value="SS">SS</option>
+                        <option value="THEO">THEO</option>
+                        <option value="THTR">THTR</option>
+                        <option value="WRIT">WRIT</option>
+                        <option value="YMN">YMN</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="code"></label>
+                    <select id="code" name="code">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </td>
+                
+                <td>
+                    
+                </td>
+                <td>
+                    
+                </td>
+                </form>
+            </tr>
+            <tr>
+                <td>
+                <form oninput="outputResult.value = course1.value">
+                    <label for="department"></label>
+                    <select id="department" name="department">
+                        <option value=""></option>
+                        <option value="CSC">CSC</option>
+                        <option value="MATH">MATH</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="BIBL">BIBL</option>
+                        <option value="ENGL">ENGL</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SOC">SOC</option>
+                        <option value="THEO">THEO</option>
+                        <option value="KINE">KINE</option>
+                        <option value="KINE">COMM</option>
+                        <option value="KINE">BADM</option>
+                        <option value="KINE">WRIT</option>
+                        <option value="KINE">AART</option>
+                        <option value="KINE">KINE</option>
+                        <option value="ACCT">ACCT</option>
+                        <option value="ADC">ADC</option>
+                        <option value="APOL">APOL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="BSS">BSS</option>
+                        <option value="BIOL">BIOL</option>
+                        <option value="CAPP">CAPP</option>
+                        <option value="CHEM">CHEM</option>
+                        <option value="CHI">CHI</option>
+                        <option value="COL">COL</option>
+                        <option value="CRMJ">CRMJ</option>
+                        <option value="ECED">ECED</option>
+                        <option value="ECON">ECON</option>
+                        <option value="EDUC">EDUC</option>
+                        <option value="ELED">ELED</option>
+                        <option value="FA">FA</option>
+                        <option value="FNAN">FNAN</option>
+                        <option value="FREN">FREN</option>
+                        <option value="GER">GER</option>
+                        <option value="GRK">GRK</option>
+                        <option value="ECED">ECED</option>
+                        <option value="HCM">HCM</option>
+                        <option value="HEB">HEB</option>
+                        <option value="HIST">HIST</option>
+                        <option value="HRM">HRM</option>
+                        <option value="HS">HS</option>
+                        <option value="HUM">HUM</option>
+                        <option value="INT">INT</option>
+                        <option value="ITSC">ITSC</option>
+                        <option value="JRNL">JRNL</option>
+                        <option value="KINE">KINE</option>
+                        <option value="LANG">LANG</option>
+                        <option value="LIT">LIT</option>
+                        <option value="MATH">MATH</option>
+                        <option value="MF">MF</option>
+                        <option value="MH">MH</option>
+                        <option value="MIN">MIN</option>
+                        <option value="MINP">MINP</option>
+                        <option value="MSL">MSL</option>
+                        <option value="MUAP">MUAP</option>
+                        <option value="MUED">MUED</option>
+                        <option value="MUEN">MUEN</option>
+                        <option value="MULH">MULH</option>
+                        <option value="MUTH">MUTH</option>
+                        <option value="MUWA">MUWA</option>
+                        <option value="NPM">NPM</option>
+                        <option value="NS">NS</option>
+                        <option value="NUR">NUR</option>
+                        <option value="ORGM">ORGM</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="PHYS">PHYS</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SCED">SCED</option>
+                        <option value="SOC">SOC</option>
+                        <option value="SPAN">SPAN</option>
+                        <option value="SPED">SPED</option>
+                        <option value="SS">SS</option>
+                        <option value="THEO">THEO</option>
+                        <option value="THTR">THTR</option>
+                        <option value="WRIT">WRIT</option>
+                        <option value="YMN">YMN</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="code"></label>
+                    <select id="code" name="code">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </td>
+                
+                <td>
+                    
+                </td>
+                <td>
+                    
+                </td>
+                </form>
+            </tr>
+            <tr>
+                <td>
+                <form oninput="outputResult.value = course1.value">
+                    <label for="department"></label>
+                    <select id="department" name="department">
+                        <option value=""></option>
+                        <option value="CSC">CSC</option>
+                        <option value="MATH">MATH</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="BIBL">BIBL</option>
+                        <option value="ENGL">ENGL</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SOC">SOC</option>
+                        <option value="THEO">THEO</option>
+                        <option value="KINE">KINE</option>
+                        <option value="KINE">COMM</option>
+                        <option value="KINE">BADM</option>
+                        <option value="KINE">WRIT</option>
+                        <option value="KINE">AART</option>
+                        <option value="KINE">KINE</option>
+                        <option value="ACCT">ACCT</option>
+                        <option value="ADC">ADC</option>
+                        <option value="APOL">APOL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="BSS">BSS</option>
+                        <option value="BIOL">BIOL</option>
+                        <option value="CAPP">CAPP</option>
+                        <option value="CHEM">CHEM</option>
+                        <option value="CHI">CHI</option>
+                        <option value="COL">COL</option>
+                        <option value="CRMJ">CRMJ</option>
+                        <option value="ECED">ECED</option>
+                        <option value="ECON">ECON</option>
+                        <option value="EDUC">EDUC</option>
+                        <option value="ELED">ELED</option>
+                        <option value="FA">FA</option>
+                        <option value="FNAN">FNAN</option>
+                        <option value="FREN">FREN</option>
+                        <option value="GER">GER</option>
+                        <option value="GRK">GRK</option>
+                        <option value="ECED">ECED</option>
+                        <option value="HCM">HCM</option>
+                        <option value="HEB">HEB</option>
+                        <option value="HIST">HIST</option>
+                        <option value="HRM">HRM</option>
+                        <option value="HS">HS</option>
+                        <option value="HUM">HUM</option>
+                        <option value="INT">INT</option>
+                        <option value="ITSC">ITSC</option>
+                        <option value="JRNL">JRNL</option>
+                        <option value="KINE">KINE</option>
+                        <option value="LANG">LANG</option>
+                        <option value="LIT">LIT</option>
+                        <option value="MATH">MATH</option>
+                        <option value="MF">MF</option>
+                        <option value="MH">MH</option>
+                        <option value="MIN">MIN</option>
+                        <option value="MINP">MINP</option>
+                        <option value="MSL">MSL</option>
+                        <option value="MUAP">MUAP</option>
+                        <option value="MUED">MUED</option>
+                        <option value="MUEN">MUEN</option>
+                        <option value="MULH">MULH</option>
+                        <option value="MUTH">MUTH</option>
+                        <option value="MUWA">MUWA</option>
+                        <option value="NPM">NPM</option>
+                        <option value="NS">NS</option>
+                        <option value="NUR">NUR</option>
+                        <option value="ORGM">ORGM</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="PHYS">PHYS</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SCED">SCED</option>
+                        <option value="SOC">SOC</option>
+                        <option value="SPAN">SPAN</option>
+                        <option value="SPED">SPED</option>
+                        <option value="SS">SS</option>
+                        <option value="THEO">THEO</option>
+                        <option value="THTR">THTR</option>
+                        <option value="WRIT">WRIT</option>
+                        <option value="YMN">YMN</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="code"></label>
+                    <select id="code" name="code">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </td>
+                
+                <td>
+                    
+                </td>
+                <td>
+                    
+                </td>
+                </form>
+            </tr>
+            <tr>
+                <td>
+                <form oninput="outputResult.value = course1.value">
+                    <label for="department"></label>
+                    <select id="department" name="department">
+                        <option value=""></option>
+                        <option value="CSC">CSC</option>
+                        <option value="MATH">MATH</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="BIBL">BIBL</option>
+                        <option value="ENGL">ENGL</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SOC">SOC</option>
+                        <option value="THEO">THEO</option>
+                        <option value="KINE">KINE</option>
+                        <option value="KINE">COMM</option>
+                        <option value="KINE">BADM</option>
+                        <option value="KINE">WRIT</option>
+                        <option value="KINE">AART</option>
+                        <option value="KINE">KINE</option>
+                        <option value="ACCT">ACCT</option>
+                        <option value="ADC">ADC</option>
+                        <option value="APOL">APOL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="BSS">BSS</option>
+                        <option value="BIOL">BIOL</option>
+                        <option value="CAPP">CAPP</option>
+                        <option value="CHEM">CHEM</option>
+                        <option value="CHI">CHI</option>
+                        <option value="COL">COL</option>
+                        <option value="CRMJ">CRMJ</option>
+                        <option value="ECED">ECED</option>
+                        <option value="ECON">ECON</option>
+                        <option value="EDUC">EDUC</option>
+                        <option value="ELED">ELED</option>
+                        <option value="FA">FA</option>
+                        <option value="FNAN">FNAN</option>
+                        <option value="FREN">FREN</option>
+                        <option value="GER">GER</option>
+                        <option value="GRK">GRK</option>
+                        <option value="ECED">ECED</option>
+                        <option value="HCM">HCM</option>
+                        <option value="HEB">HEB</option>
+                        <option value="HIST">HIST</option>
+                        <option value="HRM">HRM</option>
+                        <option value="HS">HS</option>
+                        <option value="HUM">HUM</option>
+                        <option value="INT">INT</option>
+                        <option value="ITSC">ITSC</option>
+                        <option value="JRNL">JRNL</option>
+                        <option value="KINE">KINE</option>
+                        <option value="LANG">LANG</option>
+                        <option value="LIT">LIT</option>
+                        <option value="MATH">MATH</option>
+                        <option value="MF">MF</option>
+                        <option value="MH">MH</option>
+                        <option value="MIN">MIN</option>
+                        <option value="MINP">MINP</option>
+                        <option value="MSL">MSL</option>
+                        <option value="MUAP">MUAP</option>
+                        <option value="MUED">MUED</option>
+                        <option value="MUEN">MUEN</option>
+                        <option value="MULH">MULH</option>
+                        <option value="MUTH">MUTH</option>
+                        <option value="MUWA">MUWA</option>
+                        <option value="NPM">NPM</option>
+                        <option value="NS">NS</option>
+                        <option value="NUR">NUR</option>
+                        <option value="ORGM">ORGM</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="PHYS">PHYS</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SCED">SCED</option>
+                        <option value="SOC">SOC</option>
+                        <option value="SPAN">SPAN</option>
+                        <option value="SPED">SPED</option>
+                        <option value="SS">SS</option>
+                        <option value="THEO">THEO</option>
+                        <option value="THTR">THTR</option>
+                        <option value="WRIT">WRIT</option>
+                        <option value="YMN">YMN</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="code"></label>
+                    <select id="code" name="code">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </td>
+                
+                <td>
+                    
+                </td>
+                <td>
+                    
+                </td>
+                </form>
+            </tr>
+            <tr>
+                <td>
+                <form oninput="outputResult.value = course1.value">
+                    <label for="department"></label>
+                    <select id="department" name="department">
+                        <option value=""></option>
+                        <option value="CSC">CSC</option>
+                        <option value="MATH">MATH</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="BIBL">BIBL</option>
+                        <option value="ENGL">ENGL</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SOC">SOC</option>
+                        <option value="THEO">THEO</option>
+                        <option value="KINE">KINE</option>
+                        <option value="KINE">COMM</option>
+                        <option value="KINE">BADM</option>
+                        <option value="KINE">WRIT</option>
+                        <option value="KINE">AART</option>
+                        <option value="KINE">KINE</option>
+                        <option value="ACCT">ACCT</option>
+                        <option value="ADC">ADC</option>
+                        <option value="APOL">APOL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="BSS">BSS</option>
+                        <option value="BIOL">BIOL</option>
+                        <option value="CAPP">CAPP</option>
+                        <option value="CHEM">CHEM</option>
+                        <option value="CHI">CHI</option>
+                        <option value="COL">COL</option>
+                        <option value="CRMJ">CRMJ</option>
+                        <option value="ECED">ECED</option>
+                        <option value="ECON">ECON</option>
+                        <option value="EDUC">EDUC</option>
+                        <option value="ELED">ELED</option>
+                        <option value="FA">FA</option>
+                        <option value="FNAN">FNAN</option>
+                        <option value="FREN">FREN</option>
+                        <option value="GER">GER</option>
+                        <option value="GRK">GRK</option>
+                        <option value="ECED">ECED</option>
+                        <option value="HCM">HCM</option>
+                        <option value="HEB">HEB</option>
+                        <option value="HIST">HIST</option>
+                        <option value="HRM">HRM</option>
+                        <option value="HS">HS</option>
+                        <option value="HUM">HUM</option>
+                        <option value="INT">INT</option>
+                        <option value="ITSC">ITSC</option>
+                        <option value="JRNL">JRNL</option>
+                        <option value="KINE">KINE</option>
+                        <option value="LANG">LANG</option>
+                        <option value="LIT">LIT</option>
+                        <option value="MATH">MATH</option>
+                        <option value="MF">MF</option>
+                        <option value="MH">MH</option>
+                        <option value="MIN">MIN</option>
+                        <option value="MINP">MINP</option>
+                        <option value="MSL">MSL</option>
+                        <option value="MUAP">MUAP</option>
+                        <option value="MUED">MUED</option>
+                        <option value="MUEN">MUEN</option>
+                        <option value="MULH">MULH</option>
+                        <option value="MUTH">MUTH</option>
+                        <option value="MUWA">MUWA</option>
+                        <option value="NPM">NPM</option>
+                        <option value="NS">NS</option>
+                        <option value="NUR">NUR</option>
+                        <option value="ORGM">ORGM</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="PHYS">PHYS</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SCED">SCED</option>
+                        <option value="SOC">SOC</option>
+                        <option value="SPAN">SPAN</option>
+                        <option value="SPED">SPED</option>
+                        <option value="SS">SS</option>
+                        <option value="THEO">THEO</option>
+                        <option value="THTR">THTR</option>
+                        <option value="WRIT">WRIT</option>
+                        <option value="YMN">YMN</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="code"></label>
+                    <select id="code" name="code">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </td>
+                
+                <td>
+                    
+                </td>
+                <td>
+                    
+                </td>
+                </form>
+            </tr>
+            
+        </table>
+        
+
+        <table class="table" style="float: right;">
+            <tr>
+                <th colspan="4">Winter/Summer 2025</th>
+            </tr>
+            <tr>
+                <th>Depart</th>
+                <th>Code</th>
+                <th>Name</th>
+                <th>Credits</th>
+            </tr>
+            <!-- Sample course data row for left column -->
+            
+            <tr>
+                <td>
+                <form oninput="outputResult.value = course1.value">
+                    <label for="department"></label>
+                    <select id="department" name="department">
+                        <option value=""></option>
+                        <option value="CSC">CSC</option>
+                        <option value="MATH">MATH</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="BIBL">BIBL</option>
+                        <option value="ENGL">ENGL</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SOC">SOC</option>
+                        <option value="THEO">THEO</option>
+                        <option value="KINE">KINE</option>
+                        <option value="KINE">COMM</option>
+                        <option value="KINE">BADM</option>
+                        <option value="KINE">WRIT</option>
+                        <option value="KINE">AART</option>
+                        <option value="KINE">KINE</option>
+                        <option value="ACCT">ACCT</option>
+                        <option value="ADC">ADC</option>
+                        <option value="APOL">APOL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="BSS">BSS</option>
+                        <option value="BIOL">BIOL</option>
+                        <option value="CAPP">CAPP</option>
+                        <option value="CHEM">CHEM</option>
+                        <option value="CHI">CHI</option>
+                        <option value="COL">COL</option>
+                        <option value="CRMJ">CRMJ</option>
+                        <option value="ECED">ECED</option>
+                        <option value="ECON">ECON</option>
+                        <option value="EDUC">EDUC</option>
+                        <option value="ELED">ELED</option>
+                        <option value="FA">FA</option>
+                        <option value="FNAN">FNAN</option>
+                        <option value="FREN">FREN</option>
+                        <option value="GER">GER</option>
+                        <option value="GRK">GRK</option>
+                        <option value="ECED">ECED</option>
+                        <option value="HCM">HCM</option>
+                        <option value="HEB">HEB</option>
+                        <option value="HIST">HIST</option>
+                        <option value="HRM">HRM</option>
+                        <option value="HS">HS</option>
+                        <option value="HUM">HUM</option>
+                        <option value="INT">INT</option>
+                        <option value="ITSC">ITSC</option>
+                        <option value="JRNL">JRNL</option>
+                        <option value="KINE">KINE</option>
+                        <option value="LANG">LANG</option>
+                        <option value="LIT">LIT</option>
+                        <option value="MATH">MATH</option>
+                        <option value="MF">MF</option>
+                        <option value="MH">MH</option>
+                        <option value="MIN">MIN</option>
+                        <option value="MINP">MINP</option>
+                        <option value="MSL">MSL</option>
+                        <option value="MUAP">MUAP</option>
+                        <option value="MUED">MUED</option>
+                        <option value="MUEN">MUEN</option>
+                        <option value="MULH">MULH</option>
+                        <option value="MUTH">MUTH</option>
+                        <option value="MUWA">MUWA</option>
+                        <option value="NPM">NPM</option>
+                        <option value="NS">NS</option>
+                        <option value="NUR">NUR</option>
+                        <option value="ORGM">ORGM</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="PHYS">PHYS</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SCED">SCED</option>
+                        <option value="SOC">SOC</option>
+                        <option value="SPAN">SPAN</option>
+                        <option value="SPED">SPED</option>
+                        <option value="SS">SS</option>
+                        <option value="THEO">THEO</option>
+                        <option value="THTR">THTR</option>
+                        <option value="WRIT">WRIT</option>
+                        <option value="YMN">YMN</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="code"></label>
+                    <select id="code" name="code">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </td>
+                
+                <td>
+                    
+                </td>
+                <td>
+                    
+                </td>
+                </form>
+            </tr>
+            <tr>
+                <td>
+                <form oninput="outputResult.value = course1.value">
+                    <label for="department"></label>
+                    <select id="department" name="department">
+                        <option value=""></option>
+                        <option value="CSC">CSC</option>
+                        <option value="MATH">MATH</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="BIBL">BIBL</option>
+                        <option value="ENGL">ENGL</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SOC">SOC</option>
+                        <option value="THEO">THEO</option>
+                        <option value="KINE">KINE</option>
+                        <option value="KINE">COMM</option>
+                        <option value="KINE">BADM</option>
+                        <option value="KINE">WRIT</option>
+                        <option value="KINE">AART</option>
+                        <option value="KINE">KINE</option>
+                        <option value="ACCT">ACCT</option>
+                        <option value="ADC">ADC</option>
+                        <option value="APOL">APOL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="BSS">BSS</option>
+                        <option value="BIOL">BIOL</option>
+                        <option value="CAPP">CAPP</option>
+                        <option value="CHEM">CHEM</option>
+                        <option value="CHI">CHI</option>
+                        <option value="COL">COL</option>
+                        <option value="CRMJ">CRMJ</option>
+                        <option value="ECED">ECED</option>
+                        <option value="ECON">ECON</option>
+                        <option value="EDUC">EDUC</option>
+                        <option value="ELED">ELED</option>
+                        <option value="FA">FA</option>
+                        <option value="FNAN">FNAN</option>
+                        <option value="FREN">FREN</option>
+                        <option value="GER">GER</option>
+                        <option value="GRK">GRK</option>
+                        <option value="ECED">ECED</option>
+                        <option value="HCM">HCM</option>
+                        <option value="HEB">HEB</option>
+                        <option value="HIST">HIST</option>
+                        <option value="HRM">HRM</option>
+                        <option value="HS">HS</option>
+                        <option value="HUM">HUM</option>
+                        <option value="INT">INT</option>
+                        <option value="ITSC">ITSC</option>
+                        <option value="JRNL">JRNL</option>
+                        <option value="KINE">KINE</option>
+                        <option value="LANG">LANG</option>
+                        <option value="LIT">LIT</option>
+                        <option value="MATH">MATH</option>
+                        <option value="MF">MF</option>
+                        <option value="MH">MH</option>
+                        <option value="MIN">MIN</option>
+                        <option value="MINP">MINP</option>
+                        <option value="MSL">MSL</option>
+                        <option value="MUAP">MUAP</option>
+                        <option value="MUED">MUED</option>
+                        <option value="MUEN">MUEN</option>
+                        <option value="MULH">MULH</option>
+                        <option value="MUTH">MUTH</option>
+                        <option value="MUWA">MUWA</option>
+                        <option value="NPM">NPM</option>
+                        <option value="NS">NS</option>
+                        <option value="NUR">NUR</option>
+                        <option value="ORGM">ORGM</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="PHYS">PHYS</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SCED">SCED</option>
+                        <option value="SOC">SOC</option>
+                        <option value="SPAN">SPAN</option>
+                        <option value="SPED">SPED</option>
+                        <option value="SS">SS</option>
+                        <option value="THEO">THEO</option>
+                        <option value="THTR">THTR</option>
+                        <option value="WRIT">WRIT</option>
+                        <option value="YMN">YMN</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="code"></label>
+                    <select id="code" name="code">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </td>
+                
+                <td>
+                    
+                </td>
+                <td>
+                    
+                </td>
+                </form>
+            </tr>
+            <tr>
+                <td>
+                <form oninput="outputResult.value = course1.value">
+                    <label for="department"></label>
+                    <select id="department" name="department">
+                        <option value=""></option>
+                        <option value="CSC">CSC</option>
+                        <option value="MATH">MATH</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="BIBL">BIBL</option>
+                        <option value="ENGL">ENGL</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SOC">SOC</option>
+                        <option value="THEO">THEO</option>
+                        <option value="KINE">KINE</option>
+                        <option value="KINE">COMM</option>
+                        <option value="KINE">BADM</option>
+                        <option value="KINE">WRIT</option>
+                        <option value="KINE">AART</option>
+                        <option value="KINE">KINE</option>
+                        <option value="ACCT">ACCT</option>
+                        <option value="ADC">ADC</option>
+                        <option value="APOL">APOL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="BSS">BSS</option>
+                        <option value="BIOL">BIOL</option>
+                        <option value="CAPP">CAPP</option>
+                        <option value="CHEM">CHEM</option>
+                        <option value="CHI">CHI</option>
+                        <option value="COL">COL</option>
+                        <option value="CRMJ">CRMJ</option>
+                        <option value="ECED">ECED</option>
+                        <option value="ECON">ECON</option>
+                        <option value="EDUC">EDUC</option>
+                        <option value="ELED">ELED</option>
+                        <option value="FA">FA</option>
+                        <option value="FNAN">FNAN</option>
+                        <option value="FREN">FREN</option>
+                        <option value="GER">GER</option>
+                        <option value="GRK">GRK</option>
+                        <option value="ECED">ECED</option>
+                        <option value="HCM">HCM</option>
+                        <option value="HEB">HEB</option>
+                        <option value="HIST">HIST</option>
+                        <option value="HRM">HRM</option>
+                        <option value="HS">HS</option>
+                        <option value="HUM">HUM</option>
+                        <option value="INT">INT</option>
+                        <option value="ITSC">ITSC</option>
+                        <option value="JRNL">JRNL</option>
+                        <option value="KINE">KINE</option>
+                        <option value="LANG">LANG</option>
+                        <option value="LIT">LIT</option>
+                        <option value="MATH">MATH</option>
+                        <option value="MF">MF</option>
+                        <option value="MH">MH</option>
+                        <option value="MIN">MIN</option>
+                        <option value="MINP">MINP</option>
+                        <option value="MSL">MSL</option>
+                        <option value="MUAP">MUAP</option>
+                        <option value="MUED">MUED</option>
+                        <option value="MUEN">MUEN</option>
+                        <option value="MULH">MULH</option>
+                        <option value="MUTH">MUTH</option>
+                        <option value="MUWA">MUWA</option>
+                        <option value="NPM">NPM</option>
+                        <option value="NS">NS</option>
+                        <option value="NUR">NUR</option>
+                        <option value="ORGM">ORGM</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="PHYS">PHYS</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SCED">SCED</option>
+                        <option value="SOC">SOC</option>
+                        <option value="SPAN">SPAN</option>
+                        <option value="SPED">SPED</option>
+                        <option value="SS">SS</option>
+                        <option value="THEO">THEO</option>
+                        <option value="THTR">THTR</option>
+                        <option value="WRIT">WRIT</option>
+                        <option value="YMN">YMN</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="code"></label>
+                    <select id="code" name="code">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </td>
+                
+                <td>
+                    
+                </td>
+                <td>
+                    
+                </td>
+                </form>
+            </tr>
+            <tr>
+                <td>
+                <form oninput="outputResult.value = course1.value">
+                    <label for="department"></label>
+                    <select id="department" name="department">
+                        <option value=""></option>
+                        <option value="CSC">CSC</option>
+                        <option value="MATH">MATH</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="BIBL">BIBL</option>
+                        <option value="ENGL">ENGL</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SOC">SOC</option>
+                        <option value="THEO">THEO</option>
+                        <option value="KINE">KINE</option>
+                        <option value="KINE">COMM</option>
+                        <option value="KINE">BADM</option>
+                        <option value="KINE">WRIT</option>
+                        <option value="KINE">AART</option>
+                        <option value="KINE">KINE</option>
+                        <option value="ACCT">ACCT</option>
+                        <option value="ADC">ADC</option>
+                        <option value="APOL">APOL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="BSS">BSS</option>
+                        <option value="BIOL">BIOL</option>
+                        <option value="CAPP">CAPP</option>
+                        <option value="CHEM">CHEM</option>
+                        <option value="CHI">CHI</option>
+                        <option value="COL">COL</option>
+                        <option value="CRMJ">CRMJ</option>
+                        <option value="ECED">ECED</option>
+                        <option value="ECON">ECON</option>
+                        <option value="EDUC">EDUC</option>
+                        <option value="ELED">ELED</option>
+                        <option value="FA">FA</option>
+                        <option value="FNAN">FNAN</option>
+                        <option value="FREN">FREN</option>
+                        <option value="GER">GER</option>
+                        <option value="GRK">GRK</option>
+                        <option value="ECED">ECED</option>
+                        <option value="HCM">HCM</option>
+                        <option value="HEB">HEB</option>
+                        <option value="HIST">HIST</option>
+                        <option value="HRM">HRM</option>
+                        <option value="HS">HS</option>
+                        <option value="HUM">HUM</option>
+                        <option value="INT">INT</option>
+                        <option value="ITSC">ITSC</option>
+                        <option value="JRNL">JRNL</option>
+                        <option value="KINE">KINE</option>
+                        <option value="LANG">LANG</option>
+                        <option value="LIT">LIT</option>
+                        <option value="MATH">MATH</option>
+                        <option value="MF">MF</option>
+                        <option value="MH">MH</option>
+                        <option value="MIN">MIN</option>
+                        <option value="MINP">MINP</option>
+                        <option value="MSL">MSL</option>
+                        <option value="MUAP">MUAP</option>
+                        <option value="MUED">MUED</option>
+                        <option value="MUEN">MUEN</option>
+                        <option value="MULH">MULH</option>
+                        <option value="MUTH">MUTH</option>
+                        <option value="MUWA">MUWA</option>
+                        <option value="NPM">NPM</option>
+                        <option value="NS">NS</option>
+                        <option value="NUR">NUR</option>
+                        <option value="ORGM">ORGM</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="PHYS">PHYS</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SCED">SCED</option>
+                        <option value="SOC">SOC</option>
+                        <option value="SPAN">SPAN</option>
+                        <option value="SPED">SPED</option>
+                        <option value="SS">SS</option>
+                        <option value="THEO">THEO</option>
+                        <option value="THTR">THTR</option>
+                        <option value="WRIT">WRIT</option>
+                        <option value="YMN">YMN</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="code"></label>
+                    <select id="code" name="code">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </td>
+                
+                <td>
+                    
+                </td>
+                <td>
+                    
+                </td>
+                </form>
+            </tr>
+            <tr>
+                <td>
+                <form oninput="outputResult.value = course1.value">
+                    <label for="department"></label>
+                    <select id="department" name="department">
+                        <option value=""></option>
+                        <option value="CSC">CSC</option>
+                        <option value="MATH">MATH</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="BIBL">BIBL</option>
+                        <option value="ENGL">ENGL</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SOC">SOC</option>
+                        <option value="THEO">THEO</option>
+                        <option value="KINE">KINE</option>
+                        <option value="KINE">COMM</option>
+                        <option value="KINE">BADM</option>
+                        <option value="KINE">WRIT</option>
+                        <option value="KINE">AART</option>
+                        <option value="KINE">KINE</option>
+                        <option value="ACCT">ACCT</option>
+                        <option value="ADC">ADC</option>
+                        <option value="APOL">APOL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="ASL">ASL</option>
+                        <option value="BSS">BSS</option>
+                        <option value="BIOL">BIOL</option>
+                        <option value="CAPP">CAPP</option>
+                        <option value="CHEM">CHEM</option>
+                        <option value="CHI">CHI</option>
+                        <option value="COL">COL</option>
+                        <option value="CRMJ">CRMJ</option>
+                        <option value="ECED">ECED</option>
+                        <option value="ECON">ECON</option>
+                        <option value="EDUC">EDUC</option>
+                        <option value="ELED">ELED</option>
+                        <option value="FA">FA</option>
+                        <option value="FNAN">FNAN</option>
+                        <option value="FREN">FREN</option>
+                        <option value="GER">GER</option>
+                        <option value="GRK">GRK</option>
+                        <option value="ECED">ECED</option>
+                        <option value="HCM">HCM</option>
+                        <option value="HEB">HEB</option>
+                        <option value="HIST">HIST</option>
+                        <option value="HRM">HRM</option>
+                        <option value="HS">HS</option>
+                        <option value="HUM">HUM</option>
+                        <option value="INT">INT</option>
+                        <option value="ITSC">ITSC</option>
+                        <option value="JRNL">JRNL</option>
+                        <option value="KINE">KINE</option>
+                        <option value="LANG">LANG</option>
+                        <option value="LIT">LIT</option>
+                        <option value="MATH">MATH</option>
+                        <option value="MF">MF</option>
+                        <option value="MH">MH</option>
+                        <option value="MIN">MIN</option>
+                        <option value="MINP">MINP</option>
+                        <option value="MSL">MSL</option>
+                        <option value="MUAP">MUAP</option>
+                        <option value="MUED">MUED</option>
+                        <option value="MUEN">MUEN</option>
+                        <option value="MULH">MULH</option>
+                        <option value="MUTH">MUTH</option>
+                        <option value="MUWA">MUWA</option>
+                        <option value="NPM">NPM</option>
+                        <option value="NS">NS</option>
+                        <option value="NUR">NUR</option>
+                        <option value="ORGM">ORGM</option>
+                        <option value="PHIL">PHIL</option>
+                        <option value="PHYS">PHYS</option>
+                        <option value="PSYC">PSYC</option>
+                        <option value="SCED">SCED</option>
+                        <option value="SOC">SOC</option>
+                        <option value="SPAN">SPAN</option>
+                        <option value="SPED">SPED</option>
+                        <option value="SS">SS</option>
+                        <option value="THEO">THEO</option>
+                        <option value="THTR">THTR</option>
+                        <option value="WRIT">WRIT</option>
+                        <option value="YMN">YMN</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="code"></label>
+                    <select id="code" name="code">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </td>
+                
+                <td>
+                    
+                </td>
                 <td>
                     
                 </td>
                 </form>
             </tr>
         </table>
+        
         <!-- Button to trigger JavaScript function "AddYear()" when clicked -->
    <!-- <center><button onclick=AddYear()>Add Year</button></center>-->
     </div>
