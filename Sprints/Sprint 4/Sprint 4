@@ -1,9 +1,17 @@
 Sprint 4
 
-Objective 1: 
-
+Objective 1: Create functions for adding new row and tables (Four Year Plan)
+Objective 2: Create Log in page
+Objective 3: Write Person, Student, and Advisor classes
 
 Sprint Backlog
 - When finished with a course row, auto add a new row to the semester table
-- Function that creates new table
-- 
+- Function that creates new tables/year
+- Populate "CODE" dropdown options from the "department" dropdown choice
+- Autofill "Name" and "Credits" from "Department" and "CODE";
+- Create "Year" tables with three columns containing the three semester tables (Tables within tables)
+
+- Log in page that askes user for information (ID)
+- Person, Student, and Adivsor object classes
+- Collect and save ID from log in page
+- Submitting log in information redirects to the main page
