@@ -20,8 +20,8 @@
             border-collapse: collapse;
         }
         .main {
-            margin-left: auto;
-            margin-right: auto;
+            margin-top: 20px;
+            margin-left: 115px;
         }
         .table-container {
             display: flex;
@@ -35,6 +35,10 @@
         .table td, .table th {
             border: 2px solid #000;
             padding: 8px;
+        }
+        button{
+            margin-top: 10px;
+            margin-left: 115px;
         }
         /* Define the size of the dropdown */
     </style>
@@ -470,7 +474,7 @@
     <button onclick="duplicateTable()">Add Year</button>
 
      <!-- Table for displaying course information, centered on the page -->
-     <table class="main" width=90%>
+    <table class="main" width=30%>
         <!-- Table header row -->
         <tr>
             <th colspan="4">Courses taken</th>
