@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- The script is written in JavaScript -->
     <script>
         function duplicateTable() {
+             // Get the table container
             var originalTable = document.getElementById("mainTable");
+            // Get the table to duplicate
             var clonedTable = originalTable.cloneNode(true);
+            // Clone the table
             var container = document.getElementById("tableContainer");
+            // Append the cloned table to the container
             container.appendChild(clonedTable);
         }
     </script>
