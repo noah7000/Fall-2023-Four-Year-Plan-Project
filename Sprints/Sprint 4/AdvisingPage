@@ -461,9 +461,6 @@
             </tr>
         </table>
      </table> 
-    
-    <!-- Button to trigger JavaScript function "AddYear()" when clicked -->
-    <!-- <center><button onclick=AddYear()>Add Year</button></center>-->
     </div>
  
     <div id="tableContainer">
@@ -473,7 +470,7 @@
     <!-- Add year button to add a new year row -->
     <button onclick="duplicateTable()">Add Year</button>
 
-     <!-- Table for displaying course information, centered on the page -->
+     <!-- Table for displaying course information -->
     <table class="main" width=30%>
         <!-- Table header row -->
         <tr>
