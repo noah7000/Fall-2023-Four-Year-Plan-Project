@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table, th, td {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        .main {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .table-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .table {
+            border: 1px solid #000;
+            border-collapse: collapse;
+            margin:  10px auto;
+        }
+        .table td, .table th {
+            border: 2px solid #000;
+            padding: 8px;
+        }
+        /* Define the size of the dropdown */
+        
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Zach">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Page Title -->
+    <h1><center>Advising page</center></h1>
+    <!-- Section for displaying courses taken -->
+    
+    <?php
+        $depts = ["","CSC","MATH","PHIL","BIBL","ENGL","PSYC","SOC","THEO","KINE","BADM","WRIT","AART","ACCT","ADC","APOL","ASL","BSS","BIOL","CAPP","CHEM","CHI"];
+        $codes = ["","101","102","210","240"];
+    ?>
+        <table id="semester" class="table" style="margin: 10 auto;">
+            <tr>
+                <th colspan="4">Fall 2024</th>
+            </tr>
+            <tr>
+                <th>Depart</th>
+                <th>Code</th>
+                <th>Name</th>
+                <th>Credits</th>
+            </tr>
+            <!-- Sample course data row for left column -->
+            
+            <tr>
+                <td id="DeptCell">
+                <form oninput="outputResult.value = course1.value">
+                    <label for="department"></label>
+                    <select id="department" name="department">
+                    <?php
+                        // Loop through the class names and generate dropdown options
+                        foreach ($depts as $dept) {
+                            echo "<option value=\"$dept\">$dept</option>";
+                        }
+                    ?>
+                    </select>
+                </td>
+
+                <script type="text/javascript">
+                function newRow() {
+                    var table = document.getElementById("semester");
+                    var deptCell = document.getElementById("DeptCell");
+                    var codeCell = document.getElementById("CodeCell");
+                    var nameCell = document.getElementById("NameCell");
+                    var credCell = document.getElementById("CredCell");
+                    var row = table.insertRow(-1);
+                    var Cell1 = row.insertCell(0);
+                    var Cell2 = row.insertCell(1);
+                    var Cell3 = row.insertCell(2);
+                    var Cell4 = row.insertCell(3);
+                    Cell1.innerHTML = deptCell.innerHTML;
+                    Cell2.innerHTML = codeCell.innerHTML;
+                    Cell3.innerHTML = nameCell.innerHTML;
+                    Cell4.innerHTML = credCell.innerHTML;
+                }
+
+                function hideButton(buttonID) {
+                    var button =  document.getElementById(buttonID);
+                    button.style.display = "none";
+                }
+                </script>
+
+                <td id="CodeCell">
+                    <form action="index.php" method="get" >
+                        <label for="dropdown"></label>
+                        <select id="dropdown" name="dropdown">
+                        <?php
+                            // Loop through the class names and generate dropdown options
+                            foreach ($codes as $code) {
+                                echo "<option value=\"$code\">$code</option>";
+                            }
+                        ?>
+                        
+                        </select>
+                        <button id="nextButton" type="button" onclick='newRow();hideButton("nextButton");'>Next</button>
+                    </form>
+                </td>
+
+                <td id="NameCell"> 
+                    
+                </td>
+
+                <td id="CredCell">
+                    -
+                </td>
+                </form>
+            </tr> 
+        </table>
+    </div>
+</body>
+</html>
