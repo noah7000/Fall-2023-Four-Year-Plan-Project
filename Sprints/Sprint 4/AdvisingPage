@@ -3,7 +3,12 @@
 <head>
     <!-- The script is written in JavaScript -->
     <script>
+        var counter = 2023; // Initialize the counter variable
         function duplicateTable() {
+            // Increment the counter
+            counter++;
+            var resultElement = document.querySelector('.result');
+            resultElement.textContent = counter; // Update the result display
              // Get the table container
             var originalTable = document.getElementById("mainTable");
             // Get the table to duplicate
@@ -13,50 +18,74 @@
             // Append the cloned table to the container
             container.appendChild(clonedTable);
         }
+       // var counter = 0; // Initialize the counter variable
+        //function incrementCounter() {
+          //  counter++; // Increment the counter
+            //var resultElement = document.querySelector('.result');
+           // resultElement.textContent = counter; // Update the result display
+       // }
+        
     </script>
     <style>
         table, th, td {
-            border: 2px solid black;
+            border: .1px solid black;
             border-collapse: collapse;
         }
         .main {
             margin-top: 20px;
             margin-left: 115px;
+            background-color: rgb(247, 245, 245);
+            font-family: sans-serif;
         }
         .table-container {
             display: flex;
             justify-content: space-between;
         }
         .table {
-            border: 1px solid #000;
+            border: .1px solid #000;
             border-collapse: collapse;
             margin:  10px auto;
+            background-color: rgb(247, 245, 245);
         }
         .table td, .table th {
-            border: 2px solid #000;
+            border: .1px solid #000;
             padding: 8px;
+            font-family: sans-serif;
         }
         button{
             margin-top: 10px;
             margin-left: 115px;
         }
-        /* Define the size of the dropdown */
+        .title-box {
+            background-color: #004a8a; /* Set the background color */
+            color: white; /* Set the text color */
+            padding: 5px; /* Add some padding for better aesthetics */
+            font-size: 18px; /* Set the font size */
+            font-family: sans-serif;
+        }
+        th{
+            color: #004a8a;
+        }
     </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Zach">
+
     <title>Document</title>
 </head>
 <body>
+    <div class="title-box">
     <!-- Page Title -->
-    <h1><center>Advising page</center></h1>
+        <h1><center>Advising Page</center></h1>
     <!-- Section for displaying courses taken -->
+    </div>
     
     <div class="table-container" id="mainTable">
+        <h2>
+            <span class='result' style="font-family: sans-serif";>2023</span>
+        </h2>
      <table>
         <table class="table" style="float: left;">
+            
             <tr>
-                <th colspan="4">Spring 2024</th>
+                <th colspan="4" Style="color: black">Fall</th>
             </tr>
             <tr>
                 <th>Depart</th>
@@ -176,7 +205,9 @@
                         <option value=""></option>
                        
                     </select>
+                    
                 </td>
+                
                 <td>
                     <label for="code"></label>
                     <select id="code" name="code">
@@ -195,10 +226,11 @@
             </tr>
             
         </table>
+        
 
         <table class="table" style="margin: 10 auto;">
             <tr>
-                <th colspan="4">Fall 2024</th>
+                <th colspan="4" Style="color: black">Spring</th>
             </tr>
             <tr>
                 <th>Depart</th>
@@ -334,7 +366,7 @@
 
         <table class="table" style="float: right;">
             <tr>
-                <th colspan="4">Winter/Summer 2024</th>
+                <th colspan="4" Style="color: black">Winter/Summer</th>
             </tr>
             <tr>
                 <th>Depart</th>
@@ -462,11 +494,11 @@
         </table>
      </table> 
     </div>
- 
+    
     <div id="tableContainer">
     <!-- Duplicated tables will be added here -->
     </div>
-
+    
     <!-- Add year button to add a new year row -->
     <button onclick="duplicateTable()">Add Year</button>
 
@@ -474,7 +506,7 @@
     <table class="main" width=30%>
         <!-- Table header row -->
         <tr>
-            <th colspan="4">Courses taken</th>
+            <th colspan="4" Style="color: black">Courses taken</th>
         </tr>
         <tr>
             <th>Course Id</th>
