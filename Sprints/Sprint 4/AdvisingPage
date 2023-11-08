@@ -33,9 +33,11 @@
         }
         .main {
             margin-top: 20px;
-            margin-left: 115px;
-            background-color: rgb(247, 245, 245);
+            margin-left: 110px;
+            background-color: rgb(251, 251, 251);
             font-family: sans-serif;
+            border-radius: 8px; /* Add rounded corners to the table */
+            overflow: hidden;
         }
         .table-container {
             display: flex;
@@ -45,7 +47,11 @@
             border: .1px solid #000;
             border-collapse: collapse;
             margin:  10px auto;
-            background-color: rgb(247, 245, 245);
+            background-color: rgb(251, 251, 251);
+            border-radius: 8px; /* Add rounded corners to the table */
+            overflow: hidden;
+            width: 25%; /* Increase the table's width */
+            height: 300px;
         }
         .table td, .table th {
             border: .1px solid #000;
@@ -54,7 +60,13 @@
         }
         button{
             margin-top: 10px;
-            margin-left: 115px;
+            margin-left: 110px;
+            background: #0b62af;
+            color: white;
+            border-radius: 5px; /* Add rounded corners to the table */
+            overflow: hidden;
+            width: 80px;
+            height: 25px;
         }
         .title-box {
             background-color: #004a8a; /* Set the background color */
@@ -364,7 +376,7 @@
         </table>
         
 
-        <table class="table" style="float: right;">
+        <table class="table" style="float: right;" >
             <tr>
                 <th colspan="4" Style="color: black">Winter/Summer</th>
             </tr>
