@@ -1,0 +1,33 @@
+Sprint 5:
+_________________________________________________________________________________________________________________________________________
+(difficulty scale: 1 = easy, 5 = Difficult)
+(priority scale: 1 = low, 5 = high)
+
+Objective 1: Combine "New Year creation button" with "New Row Creation button"      (Difficulty: 2) (Priority: 5)
+Objective 2: Populate the Database with the "Real" data Bareiss has emailed.        (Difficulty: 3) (Priority: 3)
+Objective 3: Add visual enhancements to the webisite (color, bethel title, etc.)    (Difficulty: 3) (Priority: 5)
+Objective 4: Populate the website dropdown boxes with database data.                (Difficulty: 4) (Priority: 3)
+_________________________________________________________________________________________________________________________________________
+If we have time: 
+Objective 5: Save all of the user's dropbox entries (Save the four year plan)      (Difficulty: 5) (Priority: 2)
+__________________________________________________________________________________________________________________________________________
+Sprint backlog:
+OB.1
+  - Add the "New Row Button" to Javier's website version (remember that by default there shoudl be 5 row, then the "New Row button")
+
+OB.2
+  - Use sqldeveloper to find the data that Bariess emailed aobut
+  - Add the appropiate data from Bariess's tables to our database tables
+
+OB.3
+  - Add a blue banner to the top of the screen with the bethel logo/font
+  - Add a disclaimer at the bottom of the screen stating "The information provided on this site does not reflect the actual information currently in use by Bethel University"
+  - Look at the Bethel University website for more visual features to add.
+
+OB.4
+  - Write queries to pull all the different departments
+    > Save department data to an array and populate the dropdown
+  - Write a function that queries the database for "course codes" associated with a provided "department code"
+    > Save queried data to a array and populate the code dropdown
+  - Write a function that queiries the database for a course's "Name" and "Credits" associaited with a provided "Course Code"
+    > Fill in the "Name" and "Credit" columns with the data received from the database
